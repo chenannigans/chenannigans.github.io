@@ -1,0 +1,248 @@
+
+*{
+	font-family:serif;
+}
+
+
+/* --------------------------------------------HEADER AND NAVIGATION--------------------------------*/
+.name{
+	width:30%;
+/*	border-style:solid;
+*/	font-size: 40px;
+	float:left;
+	margin-left:10px;
+
+
+}
+.name a:link, a:visited{
+	text-decoration:none;
+	color: #000000;
+}
+
+.container {
+	width: 70%;
+	overflow:none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.header{
+/*	border-style:solid;
+*/	width:70%;
+	position:fixed;
+	top:0px;
+	background-color:#E0FFFF  ;
+	padding-bottom:7px;
+	opacity:.95;
+}
+
+
+.nav{
+	width:65%;
+	float:right;
+	margin-top:20px;
+
+/*	border-style:solid;
+*/
+
+	
+
+}
+
+/* -------------------------------------------- END HEADER AND NAVIGATION--------------------------------*/
+
+
+#aboutme{
+	float:left;
+}
+
+#aboutme a:link, #aboutme a:visited{
+	color:#259fc1;
+}
+
+
+
+ul {
+
+margin:0;
+padding:0;
+display: inline;
+overflow: hidden;
+
+}
+
+ul li{
+	display:inline;
+	width:33%;
+}
+
+nav a:link, nav a:visited{
+
+display:inline-block;
+width:32.55%;
+
+color:black;
+
+text-align:center;
+
+text-decoration:none;
+
+
+}
+
+
+nav a:hover, nav a:active {
+color:#738080;
+opacity: .8;
+}
+
+#projectlist a:link, #projectlist a:visited{
+color:#259fc1;
+}
+
+.header{
+	
+	overflow:auto;
+}
+
+
+
+#intro, #aboutme, #projectintro, #misc{
+	margin-top:80px;
+	margin-left: 10px;
+}
+
+#intro{
+	float:left;
+	width:45%;
+}
+
+
+#projectlist{
+	margin-left:10px;
+}
+#aboutme{
+	width:50%;
+}
+
+/*
+a:link, a: visited{
+	display:block;
+	width: 150px;
+	font-weight: bold;
+	color: #000000;
+	background-color: #0066CC;
+	text-align: center;
+	padding:4px;
+	text-decoration:none;
+	text-transform: uppercase;
+}
+a:hover, a:active{
+	background-color: #868388;
+}
+*/
+h3, h4,h5{
+	font-family:helvetica;
+}
+
+#longcat{
+	width:100%;
+}
+#longcat img{
+	width:100%;
+}
+
+#stick{
+width:100%;
+position:fixed;
+
+}
+
+#stick img{
+	width:10%;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+}
+
+
+#misc{
+	width:40%;
+	float:left;
+}
+
+
+#gallery{
+	display:inline-block;
+	width:100%:;
+	float:left;
+}
+
+
+
+#gallery img{
+float:left;
+display:inline-block;
+width:25%;
+}
+
+#flash{
+	display:inline-block;
+	width:100%;
+}
+
+#flash object{
+	display:inline-block;
+	width:40%;
+}
+
+#alt{
+	background-color: #F5FFFF;
+	overflow:auto;
+	float:left;
+	width:100%;
+}
+
+/*hr{
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+
+}*/
+
+
+#cb img{
+	float:left;
+	display:inline-block;
+	width:100%;
+	overflow:auto;
+}
+
+#aboutstick{
+	margin-left:30px;
+	margin-top: 80px;
+	float:left;
+}
+
+#welcomestick{
+	margin-top:80px;
+	overflow:auto;
+	float:right;
+	width:50%;
+}
+
+#welcomestick img{
+	float:left;
+}
+
+#gifs{
+	text-align:left;
+}
+
+#gifs img{
+	float:right;
+}

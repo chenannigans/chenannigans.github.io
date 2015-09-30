@@ -1,0 +1,484 @@
+/*CSS for technical implementation, by Ann Chen*/
+#wrapper {
+	width: 66%;
+	margin: 0 auto;
+	background-color:white;
+	overflow:auto;
+	font-family:helvetica;
+
+}
+
+body{
+}
+
+
+
+#logo{
+	position:absolute;
+	width:30%;
+	height:50px;
+	float:left;
+/*	background-color:#8C1E14;
+
+*/	
+	background-color:white;
+	
+	
+}
+#logo img{
+	float:left;
+	padding:5px;
+	margin-top: -5px;
+	height:70px;
+	width:220px;
+}
+
+#r-corner{
+	margin-top:10px;
+	width:50%;
+	padding:0px;
+	display:inline-block;
+	overflow:hidden;
+	float:right;
+	text-decoration:none;
+	font-size:12px;
+	text-align:right;
+	color: black;
+
+	}
+
+
+#cornerwrapper{
+	float:right;
+	width:50%;
+	position: relative;
+}
+
+#r-corner a{
+
+	text-decoration:none;
+}
+
+#internationalwrapper{
+	position:absolute;
+	bottom:0;
+	display:inline-block;
+	width:50%;
+	float:left;
+}
+
+#international{
+	margin-right:10px;
+	width:50%;
+	display:inline-block;
+	float:right;
+	margin-bottom:8px;
+}
+
+#international img{
+
+	width:20%;
+	margin-bottom:5px;
+	margin-top:-4px;
+	float:right;
+	height:25px;
+}
+
+#international select{
+	float:right;
+	height:17px;
+}
+
+
+#cartimage img{
+	width:50px;
+	height:50px;
+	float:right;
+	margin-left:10px;
+	display:inline-block;
+}
+
+#searchimage img{
+	margin-top:16px;
+	float:right;
+	width:25px;
+	height:24px;
+}
+
+#r-corner input{
+	height:17px;
+	margin-top:17px;
+	float:right;
+}
+
+
+
+nav{
+	background-color: #8C1E14;
+	width:100%;
+	display:inline-block;
+	margin-top:20px;
+	margin-bottom:20px;
+
+}
+
+
+nav li{
+	display:inline;
+	overflow:hidden;
+	padding:0;
+	list-style:none;
+}
+
+nav a:link, a:visited{
+
+	display:inline-block;
+	width:19%;
+	text-align:center;
+	text-decoration:none;
+	font-size:15px;
+}
+
+nav a:visited{
+	color:#FFFFFF;
+}
+
+nav a:hover, nav a:active{
+	color: #000000;
+	opacity:1;
+}
+
+.jcarousel-wrapper {
+	width:90%;
+}
+
+/*jcarousel img {
+	width:100%:;
+}
+*/
+#leftcolumnwrap{
+	/*border-style:solid;*/
+	margin-top: -20px;
+	display:inline-block;
+	float:left;
+	margin-left:50px;
+	width:30%;
+	margin-right:25px;
+}
+
+#rightcolumnwrap{
+	display:inline-block;
+	margin-top:-20px;
+	float:left;
+	width:60%;
+	/*border-style:solid;*/
+}
+
+#leftcolumn img{
+	width:100%;
+	height:202px;
+	margin-bottom:20px;
+}
+
+#rightcolumn img{
+	width:95%;
+}
+
+
+#socialmedia {
+	padding-top:15px;
+	width:100%;
+	background-color:#BFA380;
+	display:inline-block;
+	overflow:none;
+
+}
+
+#socialmedia a{
+	text-decoration:none;
+	color:#000000;
+}
+#signup{
+	width:100%;
+	text-align:center;
+}
+
+#icons{
+	margin-left:200px;
+	width:50%;
+	float:left;
+	display:inline-block;
+}
+
+#icons li {
+	display:inline;
+	padding:0;
+	list-style:none;
+}
+#icons img{
+	display:inline-block;
+	
+
+	width:10%
+}
+
+
+#newsletter {
+	width:50%;
+	float:right;
+	margin-top:-90px;
+	display:inline-block;
+
+}
+
+#newsletter input{
+
+	margin-top:28px;
+	margin-left:20px;
+	background: white; 
+    border: 1px double #DDD; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px #333; 
+    color: #666; 
+    outline: none; 
+    height:35px; 
+    width: 230px; 
+
+
+}
+
+#email{
+	margin-top:10px;
+	margin-left:10px;
+	display:inline-block;
+	width:10%;
+}
+
+#email img{
+
+
+	display:inline-block;
+	width:50px;
+	float:right;
+}
+#order{
+	font-family: helvetica;
+	margin-top:-22px;
+	margin-right:14px;
+	width:30%;
+	float:right; 
+/*	border-style:solid;*/
+	
+}
+
+#order img{
+	width:200px;
+}
+
+
+
+#product{
+	width:65%;
+	float:left;
+	margin-left:20px;
+}
+
+#product img{
+	width:100%;
+}
+
+#reviews{
+	margin-left:33px;
+	width:62%;
+	border-top:50px;
+	float:left;
+	margin-bottom:50px;
+	display:inline-block;
+	
+
+}
+
+#reviews img{
+	height:50px;
+	width:125px;
+	float:right;
+
+}
+
+#chart{
+	width:30%;
+	float:left;
+	display:inline-block;
+		margin-left:35px;
+		margin-top:-15px;
+ 	
+}
+
+#chart img{
+	width:100%;
+	margin-left: px;
+	float:left;
+}
+
+
+
+#catalogitems{
+	float:left;
+	display:inline;
+	overflow:hidden;
+	margin-left:90px;
+	width:90%;
+
+}
+
+
+#suggestions{
+	float:left;
+	display:inline;
+	overflow:hidden;
+	margin-left:35px;
+	width:65%;
+
+/*	border-style:solid;
+*/}
+
+#suggestions ul,#catalogitems ul{
+	list-style:none;
+}
+#suggestions img,#catalogitems img{
+	margin-bottom:30px;
+	/*border-style:solid;*/
+	float:left;
+	display:inline-block;
+	text-decoration:none;
+	width:23%;
+	margin-left:-40px;
+	margin-right:50px;
+	background-color:white;
+}
+
+
+#options{
+	
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: 300px;
+/*    border-radius: 3px;
+*/    overflow: hidden;
+    background-color: #fff;
+
+    background: #fff
+    url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 95% 50%;
+}
+
+#options select{
+	padding: 5px 8px;
+    width: 95%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+
+#footer{
+	background-color:#8C1E14;
+	clear:both;
+	text-align:center;
+	overflow:hidden;
+}
+
+#footer ul{
+	display:inline-block;
+		list-style:none;
+		text-align:left;
+		color:white;
+
+
+}
+
+#mission img{
+	width:100%;
+}
+
+
+
+#theform {
+	float:left;
+	width:55%;
+
+}
+
+#theform textarea{
+	display:inline;
+	margin-left:20px;
+	background: white; 
+    border: 1px double #DDD; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px #333; 
+    color: #666; 
+    outline: none; 
+    height:40px; 
+    width: 100%;
+    float:left; 
+    border-left:10px;
+
+}
+
+#theform li {
+	display:inline-block;
+	margin-right:70px;
+
+}
+
+/*right col */
+/*#textareacol{
+
+	display:inline;
+	width:50%;
+}
+
+
+#textareacol img{
+	width:100%;
+
+}*/
+
+
+/*the left col*/
+#formcol{
+	margin-right:75px;
+	width:100%;
+	float:left;
+	display:inline;
+}
+
+#formcol input{
+	float:right;
+
+}
+
+/*#formcol input[type="textarea"]{
+	background-color:black;
+	margin-top:28px;
+	margin-left:20px;
+	background: white; 
+    border: 1px double #DDD; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px #333; 
+    color: #666; 
+    outline: none; 
+    height:35px; 
+    width: 230px; 
+    float:right;
+}*/
+
+#addcomment{
+	width:100%;
+	display:inline-block;
+	float:left;
+}
