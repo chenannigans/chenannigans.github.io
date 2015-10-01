@@ -1,0 +1,369 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head> 
+	<!-- The HEAD section has (mostly) items that are not directly seen by the user -->
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Amy Li">
+	<meta name="keywords" content="Rae Burket Shoes">
+	<meta name="description" content="Our Mission | Rae Burket Shoes">
+
+	<!-- Link to CSS -->
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<!-- The href=" " attribute is where you placed the style sheet. 
+	The rel="stylesheet" attribute just says to look for a stylesheet. 
+	The type="text/css" tells the browser the mime type of the document, which is a cascading style sheet. -->
+	
+		<title>Our Mission | Rae Burket Shoes</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+			<title>Highmaps Example</title>
+
+<!-- 23 to 205 and 249 to 250 is from highcharts (highmaps) http://www.highcharts.com/download-->
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+			<script src="http://code.highcharts.com/highcharts.js"></script>
+
+<script src="http://code.highcharts.com/maps/highmaps.js"></script>
+<script src="http://code.highcharts.com/maps/modules/data.js"></script>
+<script src="http://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/maps/modules/map.js"></script>
+
+<script src="http://code.highcharts.com/mapdata/custom/world.js"></script>
+			<style type="text/css">
+	${demo.css}
+			</style>
+			<script type="text/javascript">
+	$(function () {
+	    // Instanciate the map
+	    $('#container').highcharts('Map', {
+	        chart : {
+	            borderWidth : 0
+	        },
+
+	        title : {
+	            text : 'World Map'
+	        },
+	        subtitle : {
+	            text : 'Countries the Get 2 Give Campaign Operates In'
+	        },
+
+	        legend: {
+	            enabled: false
+	        },
+
+	        series : [{
+	            name: 'Country',
+	            mapData: Highcharts.maps['custom/world'],
+	            data: [{
+	                code: 'MX',
+	                value: 1
+	            }, {
+	                code: 'TW',
+	                value: 1
+	            }, {
+	                code: 'NG',
+	                value: 1
+	            }, {
+	                code: 'RO',
+	                value: 1
+	            }, {
+	                code: 'CN',
+	                value: 1
+	            }, {
+	                code: 'ZA',
+	                value: 1
+	            }, {
+	                code: 'KH',
+	                value: 1
+	            }, {
+	                code: 'SN',
+	                value: 1
+	            }, {
+	                code: 'GM',
+	                value: 1
+	            }, {
+	                code: 'ZM',
+	                value: 1
+	            }, {
+	                code: 'NP',
+	                value: 1
+	            }, {
+	                code: 'SA',
+	                value: 1
+	            }, {
+	                code: 'RU',
+	                value: 1
+	            }, {
+	                code: 'HT',
+	                value: 1
+	            }, {
+	                code: 'IN',
+	                value: 1
+	            }, {
+	                code: 'CM',
+	                value: 1
+	            }, {
+	                code: 'FJ',
+	                value: 1
+	            }, {
+	                code: 'MD',
+	                value: 1
+	            }, {
+	                code: 'KZ',
+	                value: 1
+	            }, {
+	                code: 'CM',
+	                value: 1
+	            }, {
+	                code: 'UY',
+	                value: 1
+	            }, {
+	                code: 'EG',
+	                value: 1
+	            }, {
+	                code: 'CD',
+	                value: 1
+	            }, {
+	                code: 'MZ',
+	                value: 1
+	            }, {
+	                code: 'CG',
+	                value: 1
+	            }, {
+	                code: 'BD',
+	                value: 1
+	            }, {
+	                code: 'TH',
+	                value: 1
+	            }, {
+	                code: 'ET',
+	                value: 1
+	            }, {
+	                code: 'BR',
+	                value: 1
+	            }, {
+	                code: 'PA',
+	                value: 1
+	            }, {
+	                code: 'PE',
+	                value: 1
+	            }, {
+	                code: 'MM',
+	                value: 1
+	            }, {
+	                code: 'DZ',
+	                value: 1
+	            }, {
+	                code: 'MA',
+	                value: 1
+	            }, {
+	                code: 'PH',
+	                value: 1
+	            }, {
+	                code: 'AO',
+	                value: 1
+	            }, {
+	                code: 'JM',
+	                value: 1
+	            }, {
+	                code: 'EC',
+	                value: 1
+	            }, {
+	                code: 'JM',
+	                value: 1
+	            }, {
+	                code: 'VN',
+	                value: 1
+	            }, {
+	                code: 'LA',
+	                value: 1
+	            }, {
+	                code: 'SZ',
+	                value: 1
+	            }, {
+	                code: 'GH',
+	                value: 1
+	            }, {
+	                code: 'CO',
+	                value: 1
+	            }, {
+	                code: 'AR',
+	                value: 1
+	            },
+
+	             {
+	                code: 'VE',
+	                value: 1
+	            }],
+	            joinBy: ['iso-a2', 'code'],
+	            dataLabels: {
+	                enabled: true,
+	                color: 'white',
+	                formatter: function () {
+	                    if (this.point.value) {
+	                        return this.point.name;
+	                    }
+	                }
+	            },
+	            tooltip: {
+	                headerFormat: '',
+	                pointFormat: '{point.name}'
+	            }
+	        }]
+	    });
+	});
+			</script>
+</head>
+    
+<body>
+	<div id = "wrapper">
+	<!-- The BODY is where the main content goes -->
+	<header>
+		<div id = "logo">
+				<a href="index.html"><img src="img/reallogo2.png" alt="Rae Burket Logo"></a>
+			</div>
+		<div id = "cornerwrapper">
+			<div id = "internationalwrapper">
+				<div id = "international">
+				<img src = "img/USA.png">
+
+ 				<select name = "USA">
+					<option value="null">USA</option>
+					<option value="black">Canada</option>
+					<option value="black">UK</option>
+					<option value="black">France</option>
+					<option value="black">Germany</option>
+
+
+
+				</select>
+				</div>
+		</div>
+		
+		<div id="r-corner">
+
+			<div id = "cartimage">
+			<a href=""><img src="img/cart.png"></a>
+			</div>
+			<!-- <img src="Flag/Link for US customers">
+			<img src="Flag/Link for global customers"> -->
+				<div id = "searchimage">
+					<img src = "img/search.png">
+					<input type="text" name="" value="">
+				</div>
+			
+			<br /><br/>
+			<a href="">Advanced Search >></a>
+		</div>
+
+	</div>
+	</header>
+
+    <nav>	     	
+		<ul>
+		<li><a href="catalog.html">Women</a></li>
+		<li><a href="catalog.html">Men</a></li>
+		<li><a href="catalog.html">Kids</a></li>
+		<li><a href="mission.html">Mission</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+		</ul>
+    </nav>
+  
+	
+	<div id="main">
+		
+		<!-- everything to know about Rae Burket's mission yay, includes an image as well-->
+		<h2>Our Mission</h2>
+
+		<div id = "mission">
+
+		<img src="img/mission.png">
+	</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit dolor leo, ac accumsan lorem consequat eget. Nam ut massa malesuada, tincidunt nulla ut, sollicitudin tortor. Aliquam eu est elementum, placerat purus sed, rutrum metus. Sed hendrerit a sem id tristique. Sed vulputate egestas mi, sit amet aliquam diam scelerisque vel. Pellentesque eget cursus odio.<br/><br/>
+
+Curabitur condimentum justo libero. Nunc pretium rutrum lacus, vitae suscipit erat condimentum ac. Suspendisse euismod leo vitae tempus consectetur. Integer tellus massa, hendrerit ac tellus ut, feugiat tristique mi. Donec dictum, urna eu dapibus dapibus, ex nisl maximus tellus, vel pharetra lacus enim eget augue. Quisque vitae venenatis ipsum. Duis a efficitur massa.
+<br /><br />
+
+
+		<br />
+		<!-- section for the highmaps thing on all the countries Rae Burket donates to -->
+		</p>
+		<script src="js/highmaps.js"></script>
+		<script src="http://code.highcharts.com/mapdata/custom/world.js"></script>
+
+
+		<div id="container" style="height: 700px; min-width: 310px; max-width: 100%; margin: 0 auto"></div>
+
+		<!-- section for the social media, originally planned to be on the right side of the page so I called it r-col -->
+		<div id = "socialmedia">
+			<div id = "signup">
+			 Connect with us!
+			</div>
+
+		<div id="icons">
+			<ul>
+				<li><a href=""><img src="img/youtube.png"></a></li>
+
+				<li><a href=""><img src="img/facebook.png"></a></li>
+				<li><a href=""><img src="img/twitter.png"></a></li>
+				<li><a href=""><img src="img/rss.png"></a></li>
+				<li><a href=""><img src="img/pinterest.png"></a></li>
+			</ul>
+
+
+		</div>
+
+		<div id = "newsletter">
+
+					<input type="text" name=" Sign up for our newsletter!" value="Enter your email here!">
+
+				<!-- 	<div id = "email"><a href = ""><img src = "img/email.png"></a></a> </div> -->
+		</div>
+		<div id = "email">
+						<a href = ""><img src = "img/email.png"></a> 
+					</div>
+	</div>
+
+		
+		 <div id="footerwrap">
+        <div id="footer">
+            
+            
+            <div id = "biglist">
+
+            	<ul>
+            		<li> <h4> Address </h4> </li>
+            		<li> 123 </li>
+            		<li> Main Street </li>
+            		<li> TX, USA </li>
+            	</ul>
+
+            	<ul>
+            		<li> <h4> Mission </h4> </li>
+            		<li> Get2Give </li>
+            		<li> More Stuff </li>
+            		<li> Stuffo </li>
+            	</ul>
+
+            	<ul>
+            		<li> <h4> Feedback </h4> </li>
+            		<li> Tell </li>
+            		<li> us your </li>
+            		<li> opinions </li>
+            	</ul>
+
+            </div>
+
+
+
+
+            
+        </div>
+        </div>
+		
+	</div>
+</div>
+		
+</body>
+
+</html>

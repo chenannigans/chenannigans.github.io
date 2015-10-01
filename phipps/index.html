@@ -1,0 +1,165 @@
+<!-- ANN CHEN 67-250 PHIPPS CONSERVATORY COLLEGE SITE OCT. 23 2014-->
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head> 
+
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->        
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script> 
+
+
+    <script src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script src="js/jssor.slider.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css" /> 
+
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+<!--  Tabs using jquery, credit to Prof. Q's Candy Crush Demo Site   --> 
+ <script>
+    $(function() {
+      $( "#tabs" ).tabs({
+        event: "mouseover"
+      });
+    });
+    </script>
+	<title>Welcome to Phipps + The University</title>
+
+</head>
+    
+<body>
+	
+<!-- Social Media icons and links-->
+    <div id = "icons">
+        <a href="http://www.facebook.com/pages/Phipps-Conservatory-and-Botanical-Gardens/104851729258"> <img src = "images/facebook.png"></a>
+        <a href = "http://www.youtube.com/phippsconservatory"><img src = "images/youtube.png"></a>
+        <a href = "http://twitter.com/PhippsNews"><img src = "images/twitter.png"></a>
+        <a href = "http://pinterest.com/phippsisgreen/"><img src = "images/pinterest.png"></a>
+    </div>
+<!-- Begin Wrapper -->
+<div id="wrapper">
+
+	<div class = "container">
+		<header>
+			<a href = "index.html"><img src = "images/logo2.png" alt ="nope" /></a>
+  		</header>
+	 
+		<hr>
+	<!-- Adding ID for the Main Page Content -->
+
+		<nav id = "navigation">
+			<ul>
+			 <li><a href="visit.html">Visitor Information</a></li>
+		  	 <li><a href="exhibit.html">Exhibits &amp; Events</a></li>
+    	  	 <li><a href="form.html">Get Involved!</a></li>
+		  	</ul>
+
+		</nav>
+
+		<hr>
+
+        <!-- Slideshow using JSSOR. Credited exactly to JSSOR site-->
+		<script src="jssor.slider.min.js"></script>
+		<script>
+    		jssor_slider1_starter = function (containerId) {
+        	var options = {
+           		$ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$,
+                $ChanceToShow: 2
+            }
+        };
+       		var jssor_slider1 = new $JssorSlider$(containerId, options);
+         	function ScaleSlider() {
+            var parentWidth = $('#slider1_container').parent().width();
+            if (parentWidth) {
+                jssor_slider1.$ScaleWidth(parentWidth);
+            }
+            else
+                window.setTimeout(ScaleSlider, 30);
+        	}
+        //Scale slider after document ready
+       		 ScaleSlider();
+        	if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+            //Capture window resize event
+            $(window).bind('resize', ScaleSlider);
+       	 }
+
+    };
+        </script>
+
+<!-- Slideshow containing testimonials-->
+        <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px; height: 400px;">
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: relative; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 400px;">
+            <div><img u="image" src="images/phipps.jpg" /></div> <!-- ©Phipps Conservatory -->
+            <div><img u="image" src="images/sallyv4.jpg" /></div> <!-- ©iStock -->
+            <div><img u="image" src="images/johnv1.jpg" /></div> <!-- @iStock -->
+            <div><img u="image" src="images/michellev2.jpg" /></div> <!-- @iStock-->
+
+
+        </div>
+        <style>
+         
+            .jssora01l, .jssora01r, .jssora01ldn, .jssora01rdn
+            {
+            	position: absolute;
+            	cursor: pointer;
+            	display: block;
+                background: url(images/a01.png) no-repeat;
+                overflow:hidden;
+            }
+            .jssora01l { background-position: -8px -38px; }
+            .jssora01r { background-position: -68px -38px; }
+            .jssora01l:hover { background-position: -128px -38px; }
+            .jssora01r:hover { background-position: -188px -38px; }
+            .jssora01ldn { background-position: -8px -38px; }
+            .jssora01rdn { background-position: -68px -38px; }
+        </style>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora01l" style="width: 45px; height: 45px; top: 123px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora01r" style="width: 45px; height: 45px; top: 123px; right: 8px">
+        </span>
+    </div>
+    <script>jssor_slider1_starter('slider1_container');</script>
+
+    <span u="arrowleft" class="jssora02l"
+    style="width: 200px; height: 55px; top: 122px; left: 8px;">
+
+    </span>
+    <!-- Arrow Right -->
+    <span u="arrowright" class="jssora02r"
+    style="width: 55px; height: 55px; top: 122px; right: 8px;">
+    </span>     
+
+
+    <!-- Tab content, credit to Prof Q's Candy Crush Demo -->
+
+    <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Welcome!</a></li>
+    <li><a href="#tabs-2">University Programs</a></li>
+    <li><a href="#tabs-3">How You Can Help</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+  </div>
+  <div id="tabs-2">
+    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere.</p>
+  </div>
+  <div id="tabs-3">
+    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+  </div>
+</div>
+
+   
+<hr>
+
+</div> <!-- end container -->
+
+</div> <!-- End wrapper -->
+
+</body>
+</html>

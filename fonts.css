@@ -1,0 +1,17 @@
+
+@font-face {
+	font-family: 'Sansation';
+	src: url('/Sansation/Sansation_Regular.ttf');
+
+}
+
+@font-face{
+	font-family: 'quicksand';
+	src: url('../fonts/quicksand/quicksand-regular.otf');
+
+}
+
+@font-face{
+	font-family: 'kaushan-script';
+	src: url('../fonts/kaushan-script/kaushanscript-regular.off');
+}
