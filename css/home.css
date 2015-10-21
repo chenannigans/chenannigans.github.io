@@ -187,6 +187,15 @@ display:inline-block;
 width:25%;
 }
 
+#flash{
+	display:inline-block;
+	width:100%;
+}
+
+#flash object{
+	display:inline-block;
+	width:40%;
+}
 
 #alt{
 	background-color: #F5FFFF;
