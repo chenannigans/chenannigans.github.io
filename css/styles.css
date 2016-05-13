@@ -59,11 +59,13 @@ position:fixed;
 
 .work{
 	position:absolute;
+	z-index:0;
 }
 
 .workimg img {
 	position:relative;
 	width:100%;
+	z-index:-1;
 }
 
 
