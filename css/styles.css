@@ -13,6 +13,10 @@
 	float:left;
 }
 
+/*.intro, .about{
+	position:absolute;
+
+}*/
 
 
 #gallery img{
@@ -33,3 +37,37 @@ position:fixed;
 	bottom:0px;
 	left:0px;
 }
+
+.intro img{
+	width:100%;
+}
+
+.line img{
+	width:100%;
+}
+
+.about img{
+	width:90%;
+	float:right;
+}
+/*
+.altnav ul li a{
+	color:green;
+
+}*/
+
+
+.work{
+	position:absolute;
+}
+
+.workimg img {
+	position:relative;
+	width:100%;
+}
+
+
+
+
+
+
