@@ -69,6 +69,21 @@ position:fixed;
 }
 */
 
+.btn:hover {
+	background-color:#14b2c6;
+	color:white;
+	box-shadow:none;
+}
+
+.btn{
+	background-color:white;
+	color: #14b2c6;
+	box-shadow:none;
+}
+
+a{
+	color: #14b2c6;
+}
 
 
 
