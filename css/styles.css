@@ -50,24 +50,7 @@ position:fixed;
 	width:90%;
 	float:right;
 }
-/*
-.altnav ul li a{
-	color:green;
 
-}*/
-
-/*
-.projects{
-	position:absolute;
-	z-index:0;
-}
-
-.projects img {
-	position:relative;
-	width:100%;
-	z-index:-1;
-}
-*/
 
 .btn:hover {
 	background-color:#14b2c6;

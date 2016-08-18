@@ -42,7 +42,7 @@
 	width:65%;
 	float:right;
 	margin-top:20px;
-
+	box-shadow:none;
 /*	border-style:solid;
 */
 
@@ -249,4 +249,9 @@ width:25%;
 
 #mtns img{
 	width:200px;
+}
+
+
+.logo img{
+	width:30%;
 }
