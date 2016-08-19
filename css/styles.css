@@ -68,6 +68,25 @@ a{
 	color: #14b2c6;
 }
 
+.gallery{
+	margin:20px;
+}
+
+ul{
+	display:inline-block;
+}
+
+li {
+	display:inline-block;
+	margin-right:10%;
+	margin-bottom:5%;
+	width: 20%;
+}
+
+li img{
+	width:100%;
+	vertical-align:middle;
+}
 
 
 
