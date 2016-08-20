@@ -83,7 +83,7 @@ a{
 
 .gallery li {
 	display:inline-block;
-	margin-right:8.0%;
+	margin-left:55px;
 	width: 25%;
 }
 
@@ -102,4 +102,7 @@ a{
 	margin-bottom:20px;
 }
 
+#capital-one, #principal, #cmu, #green-america, #nist{
+	height:50px;
+}
 
