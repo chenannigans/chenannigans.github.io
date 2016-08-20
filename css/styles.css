@@ -68,29 +68,38 @@ a{
 	color: #14b2c6;
 }
 
+/*.box{
+	border-style: solid 1px;
+}*/
 .gallery{
 	margin:20px;
 }
 
-.gallery ul{
-	display:inline-block;
+
+.gallery ul a.dim:hover img {
+    opacity: 0.7;
+            
 }
 
 .gallery li {
 	display:inline-block;
 	margin-right:8.0%;
-	margin-bottom:5%;
 	width: 25%;
 }
 
 .gallery li img{
+	display:inline-block;
 	width:100%;
 	vertical-align:middle;
 }
 
-.gallery li img:hover {
-	border-style: 1px solid;
+.gallery li img:hover{
+	opacity:.6;
 }
 
+.padded{
+	margin-top:20px;
+	margin-bottom:20px;
+}
 
 
