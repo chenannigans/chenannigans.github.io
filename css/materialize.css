@@ -5263,7 +5263,8 @@ nav {
   opacity: .92;
   width: 100%;
   height: 56px;
-  line-height: 56px; }
+  line-height: 56px; 
+box-shadow:none;}
   nav a {
     color: #fff; }
   nav .nav-wrapper {
@@ -5287,7 +5288,7 @@ nav {
       line-height: 56px; }
   nav .brand-logo {
     position: absolute;
-    color: #fff;
+    color: black;
     display: inline-block;
     font-size: 2.3rem;
     padding-left: 50px;
@@ -5333,11 +5334,11 @@ nav {
       transition: background-color .3s;
       float: left;
       padding: 0; }
-      nav ul li:hover, nav ul li.active {
-        background-color: rgba(0, 0, 0, 0.1); }
+     
+
     nav ul a {
       font-size: 1.4rem;
-      color: #fff;
+      color: #14b2c6;
       display: block;
       padding: 0 15px; }
     nav ul.left {
@@ -5387,7 +5388,7 @@ nav {
 
 @font-face {
   font-family: "Roboto";
-  src: local(Roboto Thin), url("../font/roboto/Roboto-Thin.woff2") format("woff2"), url("../font/roboto/Roboto-Thin.woff") format("woff"), url("../font/roboto/Roboto-Thin.ttf") format("truetype");
+  src: local(Roboto Thin), url("mater/font/roboto/Roboto-Thin.woff2") format("woff2"), url("../font/roboto/Roboto-Thin.woff") format("woff"), url("../font/roboto/Roboto-Thin.ttf") format("truetype");
   font-weight: 200; }
 
 @font-face {
