@@ -1,43 +1,34 @@
 <html>
 <head>
 	<!-- Google Analytics -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-69121231-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 <!-- End Google Analytics -->
 <link rel="stylesheet" type="text/css" href="css/materialize.css">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
-<link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8">
 <link rel="shortcut icon" type="image/png" href="http://chenannigans.github.io/favicon.png"/>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/js/lightbox.js"></script>
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/js/lightbox.min.js"></script>
-<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script> <!-- Full jQuery library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
-<script type="text/javascript" src="js/lightbox.min.js"></script>
-<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
 <script>
 	$(document).ready(function(){
     $('.materialboxed').materialbox();
+    $('.scrollspy').scrollSpy();
+    $('.material-tooltip').tooltip({delay: 50});
+
+
+    $('.target').pushpin({
+      top: 1000,
+      bottom: 0,
+      offset: 0
+  });
+
   });     
+
 </script>
 
-<script type="text/javascript">
-		$(function() {
-		$('#gallery a').lightBox();
-		});
-	</script>
 <div class = "navbar-fixed">
 	<nav>
-		<div class="nav-wrapper cyan darken-1">
+		<div class="nav-wrapper white">
 			<a href="index.html" class="brand-logo">ann chen</a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
 				<li> <a href = "about.html"> about </a> </li>
@@ -51,40 +42,130 @@
 
 </head>
 
-<div class = "container">
+<div class="col hide-on-small-only m3 l2">
+       <ul class="section table-of-contents">
+       		<li>2016<li>
+            <li><a href="#upside">Upside</a></li>
+            <li><a href="#giftr">Giftr</a></li>
+            <li><a href="#prc">PRC Consulting</a></li>
+            <li>2015<li>
+            <li><a href="#breadexpress">BreadExpress</a></li>
+            <li>2014</li>
+            <li><a href="#patient">Patient</a></li>
+            <li><a href="#cyberunner">Cyberunner</a></li>
+            <li><a href="#phipps">Exercises</a></li>
+       		<li>2013<li>
+            <li><a href="#defender">Defender</a></li>
+
+            
+          </ul>
+    </div>
+<div class = "container-small">
 	<h3> Some things I've worked on... </h3> <br>
+	<div class = "row">
+			<div class = "col s6">
+				<div id="upside" class="section scrollspy">
+
+						<h4>Upside</h4>
+
+						<p>
+							 This ten week project's theme was health and wellbeing on campus, which my team took to make a Chrome extension that harnesses positive psychology and aims to highlight the good things in life. Unlike the other projects I've made, I've  been using this consistently since completion and feel like it serves its purpose very well!</p>
+						
+							 Every time a user opens a new tab, they are prompted to input good memories that happened during their day. Unlike journaling, these memories are short form and encourages focus on the small, but positive events that might otherwise be overlooked. Past memories you put in can resurface every time you open the page instead of the usual cheerful quote, and can be revisited and edited in the calendar view. The extension also provides a memory analysis tool as well as an interactive word cloud.
+
+							 Coming soon to a Chrome store near you!
+							 <br><br>
+							 View on Github: <a href = "https://github.com/chenannigans/upside">here!</a>
+				</div>	
+			</div>
+
+
+				<div class = "col s6">
+				<img class = "img-down materialboxed responsive-img" width = "500" src = "img/upside.png"/>
+		</div>
+	</div>
+	<div class = "row">
+			<div class = "col s6">
+				<div id="giftr" class="section scrollspy">
+
+						<h4>Giftr</h4>
+
+						<p>
+							 A notable highlight of my summer interning at Capital One was the Carbon intern hackathon, where my team clinched first prize in the API category! We made a Django application that crowd sources gift ideas and also integrates Capital One's DevExchange Rewards API. For more about the experience, you can refer to this blog post written by my teammate that they published on <a href = "https://medium.com/capital-one-developers/dare-to-dream-our-experience-at-the-carbon-hackathon-66717a61ccb7">Medium</a>, as well as check out the <a href = "https://github.com/chenannigans/giftr">repo</a> (featuring a very extensive readme)!</p>
+						
+							 It was fun getting to use Python again, which I hadn't really touched since my 2013 Defender project, as well as learning the ropes of Django which I found less painful than Rails.
+				</div>	
+			</div>
+
+
+				<div class = "col s6">
+				<img class = "img-down materialboxed responsive-img" width = "500" src = "img/giftr.png" data-caption = "Home page, designed by yours truly"/>
+		</div>
+	</div>
+		<div class = "row">
+			<div class = "col s6">
+				<div id="prc" class="section scrollspy">
+
+						<h4>PRC Consulting</h4>
+
+						As part of a class that partners with local Pittsburgh nonprofits to help improve their business and operations, my team worked with the Pennsylvania Resources Council to collect and analyze data at their recycling events. We served as consultants for the project for fifteen weeks and had a great time getting to know our clients and their mission. <br> <br>
+
+						Our contributions included:
+						<ul>
+							<li>-Setup, documentation, and integration of an online survey tool </li> 
+							<li>-Testing and deployment at their real waste collection event</li>
+							<li>-Developing a mapping events platform for their website </li>
+						</ul>	
+
+						As my first foray into consulting for a real organization, this was a fantastic and rewarding experience that demonstrated the importance of communication and professionalism outside the context of the classroom.
+						Good results came from being flexible and transparent to make sure that the clients were involved in every step of the process and could give the feedback we needed to deliver what they wanted. 
+				</div>	
+			</div>
+
+
+				<div class = "col s6">
+				<img class = "img-down materialboxed responsive-img" width = "500" src = "img/prc.png" data-caption = "Live from the collection event!"/>
+		</div>
+	</div>
+	
 			<div class = "row">
 				<div class = "col s6">
-					<h4>A&M Bread Express </h4>
+					<div id="breadexpress" class="section scrollspy">
 
-					Fully functional mock retail bread retail store. The site was a product of a 
-					semester's worth of cumulative project work, beginning with the ERD design, 
-					transitioning into the model and backend setup, and topping it off with the front end. 
-					Fantastic experience with full stack development using Ruby on Rails, creating 
-					a robust web application. <br> <br>
+						<h4>A&M Bread Express </h4>
 
-					Features include:
-					<ul>
-						<li>-Account creation, different account types, user authentication and authorization</li> 
-						<li>-Viewable and modifiable customer, address, product information (restricted to certain users)</li>
-						<li>-Adding/removing from cart, checking out order, credit card authentication </li>
-						<li>-Responsive design with Materialize framework </li>
-					</ul>	
-					View on Github: <a href = "https://github.com/chenannigans/BreadExpress">here!</a> </br>
+						Fully functional mock retail bread retail store. The site was a product of a 
+						semester's worth of cumulative project work, beginning with the ERD design, 
+						transitioning into the model and backend setup, and topping it off with the front end. 
+						Fantastic experience with full stack development using Ruby on Rails, creating 
+						a robust web application. <br> <br>
+
+						Features include:
+						<ul>
+							<li>-Account creation, different account types, user authentication and authorization</li> 
+							<li>-Viewable and modifiable customer, address, product information (restricted to certain users)</li>
+							<li>-Adding/removing from cart, checking out order, credit card authentication </li>
+							<li>-Responsive design with Materialize framework </li>
+						</ul>	
+						View on Github: <a href = "https://github.com/chenannigans/BreadExpress">here!</a> </br>
 
 				</div>	
+			</div>
 
 				<div class = "col s6">
-				<img class = "img-down materialboxed responsive-img" width = "500" src = "img/breadtitle.png"/>
-			</div>
-		</div>
-		<hr>
+					<img class = "img-down materialboxed responsive-img" width = "500" src = "img/breadtitle.png"/>
+				</div>
+	</div>
+	<br>
+		<!-- <hr> -->
 
 		<h4>Patient | GCS</h4>
 
 		<div class = "row">
 			<div class = "col s6">
-				Team member on Patient, a Unity 3D + Oculus VR interactive narrative with the simple concept that you are strapped to a hospital bed and can only move your head to communicate. Not fully complete, but an excellent exercise in working in a large team project setting and learning new technologies. 
+				<div id="patient" class="section scrollspy">
+
+						Team member on Patient, a Unity 3D + Oculus VR interactive narrative with the simple concept that you are strapped to a hospital bed and can only move your head to communicate. Not fully complete, but an excellent exercise in working in a large team project setting and learning new technologies. 
 				<br>
 				<br>
 				Contributions:
@@ -96,15 +177,86 @@
 				<br>View on Github: <a href = "https://github.com/corychang/Patient">here!</a> 
 			</div>
 
+		</div>
 			<div class = "col s6">
 				<img class = "img-up materialboxed responsive-img" src = "img/oculus.jpg"/>
 			</div>
 		</div>
 
-		<hr>
 
-			<div class = "row">
+		
+
+
+		<!-- <hr> -->
+
+		<div class = "row">
+			<div class = "col s6">
+				<div id="cyberunner" class="section scrollspy">
+
+					<h4> Cyberunner </h4>
+
+						Beginnings of a game made for Game Development on the Web. Our team made a simple 3D endless runner
+						using three.js and physi.js.
+				</div>
+			</div>
+			<div class = "col s6">
+				<img class = "img-down materialboxed repsonsive-img"src = "img/cb1.png" width= "500" height="320"alt = "alskdnad" />
+			</div>
+		</div>
+<!-- <hr> -->
+
+<div class = "row">
+			<div id="phipps" class="section scrollspy">
+
+			<h4>Phipps &amp Rae Burket Web Exercises</h4>
+
+			Two mini intro web design projects done for class, done in roughly three days apiece.  
+			The first is a sample partner site for Phipps Conservatory aimed at university students. 
+			The second is for ficitonal shoe company Rae Burket. Good early experience 
+			designing websites without a framework and getting familiar with HTML/CSS/JS, 
+			as well as basic design principles.
+			Libraries featured: <a href = "http://lokeshdhakar.com/projects/lightbox/">Lightbox JS</a>, <a href = "http://www.highcharts.com/">Highcharts/Highmaps </a>, <a href = "http://www.jssor.com/">Jssor</a>, <a href = "http://sorgalla.com/jcarousel/">JCarousel</a> </br>
+
+			Here are some seriously HD screenshots
+	
+
+
+			<h5>Phipps</h5>
+					<div id = "gallery">
+						<img class = "img-down materialboxed responsive-img" width = "300" src ="img/ph1.png"/>
+
+						<img class = "img-down materialboxed responsive-img" width = "300" src ="img/ph2.png"/>
+
+						<img class = "img-down materialboxed responsive-img" width = "300" src ="img/ph3.png"/>
+
+						<img class = "img-down materialboxed responsive-img" width = "300" src ="img/ph4.png"/>
+
+
+						</br>
+
+					</div>
+
+			</br>
+			</br>
+
+			<h5>Rae Burket</h5>
+			<div id = "gallery">
+
+				<img class = "img-down materialboxed responsive-img" width="1000" src ="img/rb1.png"/>
+
+					<img class = "img-down materialboxed responsive-img" width = "300" src ="img/rb2.png"/>
+
+					<img class = "img-down materialboxed responsive-img" width = "300" src ="img/rb3.png"/>
+
+					<img class = "img-down materialboxed responsive-img" width = "300" src ="img/rb4.png"/>
+
+			</div>
+
+		</div>
+	</div>
+<div class = "row">
 				<div class = "col s6">
+					<div id="defender" class="section scrollspy">
 
 					<h4>Defender</h4>
 
@@ -124,6 +276,7 @@
 					View on Github: <a href = "https://github.com/chenannigans/DefenderGame">here!</a> .. or even the video below!
 						<iframe width="500" height="400" src="http://www.youtube.com/embed/hVv5IW9X3lg"></iframe>
 				</div>
+			</div>
 
 
 					<div class = "col s6">
@@ -134,69 +287,6 @@
 
 				</div>
 			<div>
-<hr>
-			<div class = "row">
-			<h4>Phipps &amp Rae Burket</h4>
 
-			Two mini intro web design projects done for class, done in roughly three days apiece.  
-			The first is a sample partner site for Phipps Conservatory aimed at university students. 
-			The second is for ficitonal shoe company Rae Burket. Good early experience 
-			designing websites without a framework and getting familiar with HTML/CSS/JS, 
-			as well as basic design principles.
-			Libraries featured: <a href = "http://lokeshdhakar.com/projects/lightbox/">Lightbox JS</a>, <a href = "http://www.highcharts.com/">Highcharts/Highmaps </a>, <a href = "http://www.jssor.com/">Jssor</a>, <a href = "http://sorgalla.com/jcarousel/">JCarousel</a> </br>
-
-			Here are some seriously HD screenshots
-	
-
-
-			<h5>Phipps</h5>
-					<div id = "gallery">
-						<a href ="img/ph1.png" data-lightbox = "gallery" title="Home" ><img src = "img/t.ph1.png"/></a>
-
-						<a href = "img/ph2.png" data-lightbox = "gallery" title = "Catalogue"><img src = "img/t.ph2.png"/></a>
-
-						<a href = "img/ph3.png" data-lightbox = "gallery" title = "Product"><img src = "img/t.ph3.png"/></a>
-
-						<a href = "img/ph4.png" data-lightbox = "gallery" title = "Mission"><img src = "img/t.ph4.png"/></a>
-
-						</br>
-
-					</div>
-
-			</br>
-			</br>
-
-			<h5>Rae Burket</h5>
-			<div id = "gallery">
-
-				<a href ="img/rb1.png" data-lightbox = "gallery" title="Home" ><img src = "img/t.rb1.png"/></a>
-
-				<a href = "img/rb2.png" data-lightbox = "gallery" title = "Catalogue"><img src = "img/t.rb2.png"/></a>
-
-				<a href = "img/rb3.png" data-lightbox = "gallery" title = "Product"><img src = "img/t.rb3.png"/></a>
-
-				<a href = "img/rb4.png" data-lightbox = "gallery" title = "Mission"><img src = "img/t.rb4.png"/></a>
-
-			</div>
-
-</div>
-
-
-		<hr>
-
-		<div class = "row">
-			<div class = "col s6">
-			<h4> Cyberunner </h4>
-
-			Beginnings of a game made for Game Development on the Web. Our team made a simple 3D endless runner
-			using three.js and physi.js. Still in the works~!
-		</div>
-			<div class = "col s6">
-			<img class = "img-down materialboxed repsonsive-img"src = "img/cb1.png" width= "500" height="320"alt = "alskdnad" />
-		</div>
 	</div>
-
-
-
-</div>
 

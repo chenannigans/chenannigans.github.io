@@ -4,6 +4,14 @@
 	url:('fonts/open-sans/OpenSans-Regular.woff') format('woff');
 }
 */
+
+.container-small{
+  margin: 0 auto;
+  max-width: 1000;
+  width: 75%;
+  margin-right:120px;
+  }
+
 *{
 	font-family:'Lato';
 }
@@ -35,7 +43,10 @@ nav ul a:hover{
 	position:absolute;
 
 }*/
+h3, h4{
+color:#14b2c6;
 
+}
 nav ul a .white-text{
 	color:white;
 }
@@ -45,13 +56,19 @@ color: #14b2c6;
 font-size:40px;
 }
 
+nav{
+	opacity:.9;
+}
 
+.abouttext{
+	margin-top:55px;
+}
 
 .nav-wrapper{
 	transition:.5s;
 }
 .altnav{
-	background-color:green;
+	border-bottom-color:black;
 }
 
 #gallery img{
@@ -91,7 +108,7 @@ position:fixed;
 	background-color:#14b2c6;
 	color:white;
 	box-shadow:none;
-	opacity: .92;
+	opacity: .9;
 }
 
 .btn{
@@ -141,5 +158,23 @@ a{
 
 #capital-one, #principal, #cmu, #green-america, #nist{
 	height:50px;
+}
+
+.table-of-contents{
+	margin-left:100px;
+	margin-top:130px;
+	position:fixed;
+}
+
+
+.table-of-contents a:hover{
+	border-left: solid 1px #14b2c6;
+}
+.table-of-contents a.active{
+	border-left: 2px solid #14b2c6;
+}
+
+.shift ul li{
+	padding-right:20px;
 }
 
