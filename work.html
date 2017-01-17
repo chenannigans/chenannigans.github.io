@@ -3,12 +3,28 @@
 
 <link rel="stylesheet" type="text/css" href="css/materialize.css">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
-<link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8">
 <link rel="shortcut icon" type="image/png" href="http://chenannigans.github.io/favicon.png"/>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 <title>annchenannchen</title>
+<script>
+	$(document).ready(function(){
+    $('.materialboxed').materialbox();
+    $('.scrollspy').scrollSpy();
+    $('.material-tooltip').tooltip({delay: 50});
+
+
+    $('.target').pushpin({
+      top: 1000,
+      bottom: 0,
+      offset: 0
+  });
+
+  });     
+
+</script>
 <div class = "navbar-fixed">
 	<nav>
 		<div class="nav-wrapper white">
@@ -23,96 +39,96 @@
 	</nav>
 </div>
 
-<div class = "container">
-		<ul class = "gallery">
-			<li><a href = "#capital-one" class = "dim"><img src = "img/c1full.png"></a></li>
-			<li><a href = "#principal" class = "dim"><img src = "img/pfg-logo.PNG"></a></li>
-			<li><a href = "#cmu" class = "dim"><img src = "img/cmu-logo.png"></a></li>
-			<li><a href = "#green-america" class = "dim"><img src = "img/green-america-logo.jpg"></a></li>
-			<li><a href = "#nist" class = "dim"><img src = "img/nist-logo.png"></a></li>
-
+</head>
+<div class="col hide-on-med-and-down m3 l2">
+	   <ul class="section table-of-contents">
+	   		<li>2016</li>
+	        <li><a href="#capital"><img class = "sidebar" src = "img/c1full.png"></a></li>
+	        <li>2015</li>
+	        <li><a href="#principal"><img class = "sidebar" src = "img/pfg-logo.PNG"></a></li>
+	        <li><a href="#cmu"><img class = "sidebar" src = "img/cmu-logo.png"></a></li>
+	        <li>2014</li>
+	        <li><a href="#green-america"><img class = "sidebar" src = "img/green-america-logo.jpg"></a></li>
+	   		<li>2012</li>
+	        <li><a href="#nist"><img class = "sidebar" src = "img/nist-logo.png"></a></li>      
 		</ul>
-
-<div id = "capital-one">&nbsp
-</div>
+	</div>
+<div class = "container-small">
+	<h3> Adventures in the Real World &trade; </h3> <br>
 
 	<div class = "row">
 		<div class = "col s7">
-	<h4>Capital One <br> Richmond, VA</h4>
-	<h5>Summer 2016 | Software Engineering Intern</h5>
+			<div id="capital" class="section scrollspy">
 
-	<p> This summer I worked at Capital One's gorgeous West Creek site, which actually looks and feels more like a college campus than my university does! </p>
+			<h4>Capital One <br> Richmond, VA</h4>
+			<h5>Summer 2016 | Software Engineering Intern</h5>
 
-	 <p> I was part of the Consumer Identity</b> department and worked on front-end for an open-source project that verifies customers using Capital One's login credentials. I primarily prototyped modals using Angular and the in-house Bootstrap mod, both of which were fairly new to me and provided great learning experiences. I was also exposed to the wonders of Gulp (though not too far from Grunt, which I used last year) and BrowserSync, which streamlined development considerably. A highlight of the summer was the intern Carbon hackathon, which was a lot of fun! More information on that project can be found <a href = "projects.html#giftr">here</a>.</p>
+			<p> This summer I worked at Capital One's gorgeous West Creek site, which actually looks and feels more like a college campus than my university does! </p>
 
-	 <p> Till the end I was reminded that effective utilization of tech can improve banking immensely, which Capital One is certainly making strides towards. I was impressed by and glad to be part of their mission to insource tech talent, focus on open source solutions, and engage in community outreach (I got to teach MIT App Inventor to middle and highschoolers, which was a ton of fun). I can only hope that other older financial institutions follow their lead and consider technology as a larger asset. 
+			 <p> I was part of the Consumer Identity</b> department and worked on front-end for an open-source project that verifies customers using Capital One's login credentials. I primarily prototyped modals using Angular and the in-house Bootstrap mod, both of which were fairly new to me and provided great learning experiences. I was also exposed to the wonders of Gulp (though not too far from Grunt, which I used last year) and BrowserSync, which streamlined development considerably. A highlight of the summer was the intern Carbon hackathon, which was a lot of fun! More information on that project can be found <a href = "projects.html#giftr">here</a>.</p>
 
-	 <p>Summer Tech Stack: <br> Angular, Node, Bootstrap, Materialize, OneUI, Angular-translate, Gulp, Bower, Django</p>
+			 <p> Till the end I was reminded that effective utilization of tech can improve banking immensely, which Capital One is certainly making strides towards. I was impressed by and glad to be part of their mission to insource tech talent, focus on open source solutions, and engage in community outreach (I got to teach MIT App Inventor to middle and highschoolers, which was a ton of fun). I can only hope that other older financial institutions follow their lead and consider technology as a larger asset. 
+
+			 <p>Summer Tech Stack: <br> Angular, Node, Bootstrap, Materialize, OneUI, Angular-translate, Gulp, Bower, Django</p>
 
 
-	</div>
-	<div class = "col s5 section">
-	<img class = "responsive-img padded" src = "img/power-up.jpg">
-	<img class = "responsive-img padded" src = "img/carbon.jpg">
+			</div>
+		</div>
+	<div class = "col s5">
+	<img class = "responsive-img materialboxed padded" src = "img/power-up.jpg">
+	<img class = "responsive-img materialboxed padded" src = "img/carbon.jpg" data-caption ="The team with our Amazon Echoes!">
 
 	</div>
 <div>
 </div>
 
 </div>
-<hr>
-
-<div id = "principal">&nbsp
-</div>
-
-	<div class = "row">
-		<div class = "col s7">
-	<h4>Principal Financial Group <br> Des Moines, IA</h4>
-	<h5>Summer 2015 | IT Application Development Intern</h5>
-
-	<p> Sophomore year I decided to go a bit out of my comfort zone and fly to the midwest to live in a state I had previously only known for corn. Although somewhat of a culture shock, the city is really quite nice with even nicer people, great food, and low living cost to boot.</p>
-
-	<p> Despite being a company I hadn't heard much about on the east coast, Principal is one of Des Moines' biggest employers and has considerable influence internationally. The internship program was well organized and I got to work on a great project with some really smart people. I worked on front-end development for the RIS (Retirement and Investment Services), where I learned more about 401k plans than anyone my age could have dreamed of. Even though I was an intern, I was tasked with recoding the deferral selection page, which was to be used by millions of people.
-
-	 <p> During the intern hackathon, I also built a calendar invite app to help recruiters schedule appointments with candidates. </p>
-
-
-	 <p>Summer Tech Stack: <br> Backbone, Underscore, Dust.js, EdgeUI (Bootstrap mod), Bootstrap, Grunt, Firebase</p>
-
-
-	</div>
-	<div class = "col s5 section">
-	<img class = "responsive-img padded" src = "img/office-view.jpg">
-	<img class = "responsive-img padded" src = "img/hackathon.jpg">
-
-</div>
-</div>
-<hr>
-
-<div id = "cmu">&nbsp
-</div>
 
 
 	<div class = "row">
 		<div class = "col s7">
+			<div id="principal" class="section scrollspy">
 
-	<h4>CMU Statistics Department<br> Pittsburgh, PA</h4>
-	<h5>Winter 2015 - Present |  Web Developer</h5>
+				<h4>Principal Financial Group <br> Des Moines, IA</h4>
+				<h5>Summer 2015 | IT Application Development Intern</h5>
 
-	<p> Recently started working part time at my school's stat department, where I help out with their website. I've worked with a few pages in PHP (still alive and kicking, apparently), dabbled in Angular, and fiddled with some content management in Drupal.</p> Shoutouts to my boss Carl who engages in memefoolery and buys his workstudies pizza!
+				<p> Sophomore year I decided to go a bit out of my comfort zone and fly to the midwest to live in a state I had previously only known for corn. Although somewhat of a culture shock, the city is really quite nice with even nicer people, great food, and low living cost to boot.</p>
+
+				<p> Despite being a company I hadn't heard much about on the east coast, Principal is one of Des Moines' biggest employers and has considerable influence internationally. The internship program was well organized and I got to work on a great project with some really smart people. I worked on front-end development for the RIS (Retirement and Investment Services), where I learned more about 401k plans than anyone my age could have dreamed of. Even though I was an intern, I was tasked with recoding the deferral selection page, which was to be used by millions of people.
+
+				 <p> During the intern hackathon, I also built a calendar invite app to help recruiters schedule appointments with candidates. </p>
 
 
+				 <p>Summer Tech Stack: <br> Backbone, Underscore, Dust.js, EdgeUI (Bootstrap mod), Bootstrap, Grunt, Firebase</p>
+
+
+			</div>
+		</div>
+		<div class = "col s5 section">
+			<img class = "responsive-img materialboxed padded" src = "img/office-view.jpg" data-caption = "View of Des Moines from our hacking space">
+			<img class = "responsive-img materialboxed padded" src = "img/hackathon.jpg" data-caption = "Working hard / hardly working?">
+
+		</div>
 	</div>
+
+	<div class = "row">
+		<div class = "col s7">
+			<div id="cmu" class="section scrollspy">
+
+			<h4>CMU Statistics Department<br> Pittsburgh, PA</h4>
+			<h5>Winter 2015 - Present |  Web Developer</h5>
+
+			<p> Recently started working part time at my school's stat department, where I help out with their website. I've worked with a few pages in PHP (still alive and kicking, apparently), dabbled in Angular, and fiddled with some content management in Drupal.</p> Shoutouts to my boss Carl who engages in memefoolery and buys his workstudies pizza!
+
+
+			</div>
+
+		</div>
 	<div class = "col s5 section">
 		<img class = "responsive-img padded" src = "img/cmu-full-logo.png">
-
-
-
-
 </div>
 </div>
-<hr>
-
+<br>
 
 	<div class = "row">
 		<div class = "col s7">
@@ -141,13 +157,10 @@
 </div>
 </div>
 
-<hr>
-<div id = "green-america">&nbsp
-</div>
-
 
 	<div class = "row">
 		<div class = "col s7">
+			<div id="green-america" class="section scrollspy">
 
 	<h4>Green America<br> Washington, DC</h4>
 	<h5>Summer 2014 |  Green Business Network Intern</h5>
@@ -159,19 +172,16 @@
 
 
 	</div>
+	</div>
 	<div class = "col s5 section">
 		<img class = "responsive-img padded" src = "img/ga-certified.jpg">
 
 </div>
 </div>
-	<hr>
-
-<div id = "nist">&nbsp
-</div>
-
 
 	<div class = "row">
 		<div class = "col s7">
+			<div id="nist" class="section scrollspy">
 
 	<h4>National Institute of <br>Standards and Technology<br> Gaithersburg, MD</h4>
 	<h5>Summer 2012 |  High School Intern</h5>
@@ -181,13 +191,12 @@
 	For a better overview, check out my end of summer presentation poster <a href = "img/SHIP_Poster.pdf">here</a>
 
 
+</div>
 
 	</div>
 	<div class = "col s5 section">
-		<img class = "responsive-img padded" src = "img/nist-jump.jpg">
-
+		<img class = "responsive-img materialboxed padded" src = "img/nist-jump.jpg" data-caption = "Cool hallways require jump pics">
 
 </div>
-
 
 
