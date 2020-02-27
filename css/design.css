@@ -16,10 +16,68 @@ h4 {
     padding: 0 !important;
 }
 
-.design {
-    display:flex;
-}
-
 .card {
     align-self: center;
+}
+
+.design{
+  width: 70%;
+}
+
+/* .grid {
+  width: 100%;
+  margin: 0 auto;
+} */
+
+.grid-item {
+  /* float: left; */
+  /* height: 500px; */
+  display:inline-block;
+}
+
+
+.s1 {
+  width: 8.33333%;
+  margin-left: 0; }
+.s2 {
+  width: 16.66667%;
+  margin-left: 0; }
+.s3 {
+  width: 25%;
+  margin-left: 0; }
+.s4 {
+  width: 33.33333%;
+  margin-left: 0; }
+.s5 {
+  width: 41.66667%;
+  margin-left: 0; }
+.s6 {
+  width: 50%;
+  margin-left: 0; }
+.s7 {
+  width: 58.33333%;
+  margin-left: 0; }
+.s8 {
+  width: 66.66667%;
+  margin-left: 0; }
+.s9 {
+  width: 75%;
+  margin-left: 0; }
+.s10 {
+  width: 83.33333%;
+  margin-left: 0; }
+.s11 {
+  width: 91.66667%;
+  margin-left: 0; }
+.s12 {
+  width: 100%;
+  margin-left: 0; }
+
+
+.gallery img {
+  width: 100%;
+}
+
+.mouse img{
+  width: 400px;
 }
