@@ -74,7 +74,8 @@ nav{
 #gallery img{
 float:left;
 display:inline-block;
-width:25%;
+width:45%;
+margin: 5px;
 }
 
 #stick{
@@ -173,17 +174,10 @@ a{
             
 }
 
-.gallery li {
-	display:inline-block;
-	margin-left:55px;
-	width: 25%;
-	margin-bottom:50px
-}
-
 .gallery li img{
 	display:inline-block;
 	width:100%;
-	vertical-align:middle;
+	/* vertical-align:middle; */
 }
 
 .gallery li img:hover{
@@ -221,3 +215,5 @@ html,body{
 	margin-bottom:0px;
 	padding-bottom: 0px;
 }
+
+
