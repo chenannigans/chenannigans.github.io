@@ -22,38 +22,47 @@
 
 
 <script>
-	$(document).ready(function(){
+
+$('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
+
+  $(document).ready(function () {
     $('.materialboxed').materialbox();
     $('.scrollspy').scrollSpy();
-    $('.material-tooltip').tooltip({delay: 50});
+    $('.material-tooltip').tooltip({ delay: 50 });
 
 
     $('.target').pushpin({
       top: 1000,
       bottom: 0,
       offset: 0
-  });
+    });
 
-  });     
+  });
 
 </script>
 
-<div class = "navbar-fixed">
-	<nav>
-		<div class="nav-wrapper white">
-			<a href="index.html" class="brand-logo">ann chen</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li> <a href = "about.html"> about </a> </li>
-				<li>  <a href = "projects.html"> projects </a>  </li>
-				<li> <a href = "work.html"> work </a> </li>
-				<li> <a href = "design.html"> design </a> </li>
-				<li> <a href = "misc.html"> misc </a> </li>
-			</ul>
-		</div>
-	</nav>
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper white">
+      <a href="index.html" class="brand-logo">ann chen</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li> <a href="about.html"> about </a> </li>
+        <li> <a href="projects.html"> projects </a> </li>
+        <li> <a href="work.html"> work </a> </li>
+        <li> <a href="design.html"> design </a> </li>
+        <li> <a href="misc.html"> misc </a> </li>
+      </ul>
+    </div>
+  </nav>
 </div>
 
-<div class="col hide-on-med-and-down m3 l2">
+
+
+<!-- <div class="col grid-item hide-on-med-and-down m3 l2">
   <ul class="section table-of-contents">
     <li>Poster Series</li>
     <a href="#posters">
@@ -68,112 +77,157 @@
     <li>Misc Sketches<li/>
       <li><a href="#defender">Defender</a></li>      
    </ul>
+</div> -->
+<div class="grid">
+
+  <div class="row">
+
+    <!-- <h4>Workplace Poster Series</h4> -->
+
+    <div class="col grid-item s4">
+      <div id="posters" class="section scrollspy">
+
+        <div class="card">
+          <div class="card-image">
+            <img class="materialboxed" src="img/lny.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col grid-item s4">
+      <div id="posters" class="section scrollspy">
+
+        <div class="card">
+          <div class="card-image">
+            <img class="materialboxed" src="img/midautumnfestposter.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col grid-item s4">
+      <div id="posters" class="section scrollspy">
+        <div class="card">
+          <div class="card-image">
+            <img class="materialboxed" src="img/diwali.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col grid-item s5">
+      <div id="posters" class="section scrollspy">
+
+        <div class="card">
+          <div class="card-image">
+            <img class="materialboxed" src="img/book festival poster.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col grid-item s7">
+      <div id="posters" class="section scrollspy">
+
+        <div class="card">
+          <div class="card-image">
+            <img class="materialboxed" src="img/map time.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="col grid-item s7">
+          <div id="posters" class="section scrollspy">
+    
+            <div class="card">
+              <div class="card-image">
+                <img class="materialboxed" src="img/brochure.png">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      <div class="col grid-item s3">
+          <div id="posters" class="section scrollspy">
+    
+            <div class="card">
+              <div class="card-image">
+                <img class="materialboxed" src="img/mouse.png">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+     
+
+    <!-- <div class="card">
+      <div class="card-image">
+        <img class="materialboxed" data-caption="bay area book fest brochure pt 1 - poster"
+          src="img/book festival poster.png">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img class="materialboxed" data-caption="bay area book fest brochure pt 2 - map" src="img/map time.png">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img class="materialboxed" data-caption="workplace mid-autumn festival event poster"
+          src="img/midautumnfestposter.png">
+      </div>
+    </div>
+
+  </div>
+  <div class="col grid-item s6">
+    <div class="card">
+      <div class="card-image">
+        <img class="materialboxed" data-caption="ad for gaming mouse illustrated from scratch" src="img/mouse.png">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img class="materialboxed" data-caption="diwali workplace event" src="img/diwali.png">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img class="materialboxed" data-caption="t-shirt design for tech" src="img/shirr.png">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img class="materialboxed" data-caption="website sketch 01" src="img/website-01.png">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img class="materialboxed" data-caption="website sketch 02" src="img/website-02.png">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img class="materialboxed" data-caption="website sketch 03" src="img/website-03.png">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img class="materialboxed" data-caption="website sketch 04" src="img/website-04.png">
+      </div>
+    </div> -->
+
+  </div>
 </div>
-<div class="design">
-
-    <div class="row">
-
-      <div class="col s6">
-        <div id="posters" class="section scrollspy">
-
-          <div class="card">
-            <div class="card-image">
-              <img class="materialboxed" data-caption="lunar new year celebration)"
-                src="img/lny.png">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s6">
-        <div id="posters" class="section scrollspy">
-
-          <div class="card">
-            <div class="card-image">
-              <img class="materialboxed" data-caption="lunar new year celebration)"
-                src="img/midautumnfestposter.png">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s6">
-        <div id="posters" class="section scrollspy">
-
-          <div class="card">
-            <div class="card-image">
-              <img class="materialboxed" data-caption="lunar new year celebration)"
-                src="img/diwali.png">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="card">
-        <div class="card-image">
-          <img class="materialboxed" data-caption="bay area book fest brochure pt 1 - poster"
-            src="img/book festival poster.png">
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-image">
-          <img class="materialboxed" data-caption="bay area book fest brochure pt 2 - map" src="img/map time.png">
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-image">
-          <img class="materialboxed" data-caption="workplace mid-autumn festival event poster"
-            src="img/midautumnfestposter.png">
-        </div>
-      </div>
-
-    </div>
-    <div class="col s6">
-      <div class="card">
-        <div class="card-image">
-          <img class="materialboxed" data-caption="ad for gaming mouse illustrated from scratch" src="img/mouse.png">
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-image">
-          <img class="materialboxed" data-caption="diwali workplace event" src="img/diwali.png">
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-image">
-          <img class="materialboxed" data-caption="t-shirt design for tech" src="img/shirr.png">
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-image">
-          <img class="materialboxed" data-caption="website sketch 01" src="img/website-01.png">
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-image">
-          <img class="materialboxed" data-caption="website sketch 02" src="img/website-02.png">
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-image">
-          <img class="materialboxed" data-caption="website sketch 03" src="img/website-03.png">
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-image">
-          <img class="materialboxed" data-caption="website sketch 04" src="img/website-04.png">
-        </div>
-      </div>
-
-    </div>
-    </div>
 </div>

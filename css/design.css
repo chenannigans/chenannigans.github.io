@@ -1,0 +1,25 @@
+
+.container {
+    width: 80%;
+}
+
+.design {
+	width:60%;
+    margin: 0 auto;
+}
+
+h4 {
+    text-align: center;
+}
+
+.section {
+    padding: 0 !important;
+}
+
+.design {
+    display:flex;
+}
+
+.card {
+    align-self: center;
+}
