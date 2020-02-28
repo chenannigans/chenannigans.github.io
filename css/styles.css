@@ -11,7 +11,7 @@
 
 .container-small{
   margin: 0 auto;
-  max-width: 1000;
+  max-width: 1400;
   width: 75%;
   margin-left:25%;
   }
@@ -75,7 +75,7 @@ nav{
 float:left;
 display:inline-block;
 width:45%;
-margin: 5px;
+margin: 2px;
 }
 
 #stick{
