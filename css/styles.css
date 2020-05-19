@@ -72,10 +72,17 @@ nav{
 }
 
 #gallery img{
-float:left;
+float: left;
 display:inline-block;
 width:45%;
 margin: 2px;
+}
+
+#gallery-wide img {
+ width: 90%;
+ float: left;
+display:inline-block;
+
 }
 
 #stick{
