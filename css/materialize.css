@@ -6208,7 +6208,7 @@ a.waves-effect .waves-ripple {
   -ms-transition: opacity .4s;
   transition: opacity .4s; }
   .materialboxed:hover {
-    opacity:.8;
+    opacity:1;
     transition: none;
    }
 
