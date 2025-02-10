@@ -111,6 +111,9 @@ nav {
 	margin-top: 50px;
 }
 
+.spacing {
+	margin-top:50px;
+}
 .nocontainer{
 	left: 50%;
 	margin-left: -100vw;
@@ -149,9 +152,16 @@ nav .nav-wrapper {
 
 }
 
+
 .padding {
 	margin-top: 30px;
 	margin-bottom: 50px;
+}
+
+
+.padding-2 {
+	margin-top: 30px;
+	margin-bottom: 25px;
 }
 
 iframe, object, embed {
