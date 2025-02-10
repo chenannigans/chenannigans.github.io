@@ -1,0 +1,473 @@
+<html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+</style>
+
+<head>
+    <!-- Google Analytics -->
+
+    <!-- End Google Analytics -->
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="http://chenannigans.github.io/favicon.png" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+
+    <script>
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+            $('.scrollspy').scrollSpy();
+            $('.material-tooltip').tooltip({ delay: 50 });
+
+
+            $('.target').pushpin({
+                top: 1000,
+                bottom: 0,
+                offset: 0
+            });
+
+        });
+
+    </script>
+
+    <div class="navbar">
+        <nav>
+            <div class="nav-wrapper white">
+                <a href="index.html" class="brand-logo">ann chen</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li> <a href="about.html"> about </a> </li>
+                    <li> <a href="projects.html"> projects </a> </li>
+                    <li> <a href="work.html"> work </a> </li>
+                    <li> <a href="design.html"> design </a> </li>
+                    <!-- <li> <a href="misc.html"> misc </a> </li> -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</head>
+
+<div class="port-row muni-splash fadeInUp-animation">
+    <img class="responsive-img" src="img/muni/munistuff-02.png">
+
+</div>
+<div class="container port-body">
+
+    <div class="row">
+        <h2 class="port-header">Muni Mobile Redesign</h2> <br>
+
+    </div>
+    <div class="row">
+
+        <h4>
+            Introduction
+        </h4>
+        <p>
+            Muni is San Francisco’s primary public transit system - a chaotic mix of buses, light rail trains, and
+            iconic cable cars that serves around 500,000 commuters and visitors daily.
+        </p>
+        <p>Although most local riders use the Clipper Card to get around, the Muni Mobile app is an alternate option for
+            buying different types of tickets, planning trips, and viewing general transit information. In the beginning
+            of 2024 Muni sunsetted its old app and launched a new one in promise of fixing its notoriously frustrating
+            predecessor, but to similarly negative reviews.
+        </p>
+        <p>For this project, I wanted to refresh the design with a more modern look integrating a seamless ticket
+            purchasing and usage
+            flow, as well as provide a
+            new onboarding experience to help first time users.
+        </p>
+    </div>
+
+    <div class="row">
+        <h4>Research</h4>
+        <p>
+            Given the rather low ratings on the app store, I started by combing the reviews to look for pain points and
+            patterns that were working out.
+        </p>
+        <p>
+
+            As you can see, not the most glowing reviews.
+        </p>
+
+    </div>
+    <div class="row padding">
+        <div class="col s4">
+            <img class="materialboxed responsive-img" src="img/muni/reviews.jpg">
+
+        </div>
+        <div class="col s4">
+            <img class="materialboxed responsive-img" src="img/muni/review2.jpg">
+
+        </div>
+        <div class="col s4">
+            <img class="materialboxed responsive-img" src="img/muni/review3.jpg">
+        </div>
+    </div>
+    <div class="row muni">
+        <p>
+            <br>Technical issues aside, these were some of the recurring themes:
+        <ul>
+            <li><b>Confusing</b> for visitors and first time users</li>
+            <li>UI is outdated and <b>difficult to read</b> </li>
+            <li>The ticket purchasing flow has <b>too many steps</b></li>
+            <li>Showing a ticket (e.g. to fare enforcement and gate agent) <b>takes too long</b></li>
+            <li>You <b>cannot reorder</b> previously purchased tickets</li>
+            <li>App should <b>prioritize ticketing function</b></li>
+        </ul>
+
+        </p>
+
+        You can map some of the users' complaints to the screenshots below:
+        <p></p>
+    </div>
+
+    <div class="row padding">
+        <div class="col s3 desc">
+            <img class="materialboxed responsive-img" src="img/muni/sc0.jpg">
+            <p>The home screen of the app, which is dominated by the indecipherable trip planner tool.
+                Even the most seasoned San Franciscan would have trouble identifying these icons - many of which are not
+                part of the Muni system
+            </p>
+        </div>
+        <div class="col s3 desc">
+            <img class="materialboxed responsive-img" src="img/muni/sc3.jpg">
+            <p>The 'Use Tickets' page - the difference between 'Active' and 'Available' tickets is unclear. In addition,
+                the app requires
+                manually hitting the refresh screen button to see new tickets. History also doesn't let you repurchase
+                old tickets.</p>
+        </div>
+        <div class="col s3 desc">
+            <img class="materialboxed responsive-img" src="img/muni/sc1.jpg">
+            <p>For purchasing a ticket, you first have to select the type of ticket and then wait for the next screen
+                to
+                load all the tickets. There's no way to 'favorite' tickets or see most recently purchased.
+
+        </div>
+        <div class="col s3 desc">
+            <img class="materialboxed responsive-img" src="img/muni/sc2.jpg">
+            <p>You aren't able to see any of the other ticket types once you select from the dropdown. Not to mention
+                the distracting Muni worm logo on each listing.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <p>The overarching sentiment was that most users prioritized <b>efficiency</b>, <b>accessibility</b>, and
+            <b>clarity</b>, especially regarding the ticketing features.
+        </p>
+    </div>
+
+
+    <div class="row">
+        <h4>Design Process</h4>
+        <p>
+            Based on the reviews, old screens, and user research, the features I prioritized adding an
+            <b>onboarding flow</b> in addition to <b>streamlining the ticket purchasing and viewing experience</b>, in addition to making the branding overall more <b>playful</b> and<b> modern.</b>
+
+        </p>
+        <h5>Visual Language</h5>
+        <p>For the colors and tone of the app, I stayed consistent with the Muni branding and colors by using its striking
+            and recognizable bold red, combining it with the character of the city's iconic cable cars to create a more levity in its presentation. For accessibility purposes, I maintained high contrast between the text and background since the app would likely be used in all lighting scenarios.
+        <div class="row">
+            <div class="col s6 desc padding">
+
+                <video class="responsive-video" controls autoplay loop>
+                    <source src="/img/muni/splash TRIM.mov" type="video/mp4">
+                </video>
+            </div>
+            <div class="col s6 desc padding">
+                <img class="materialboxed responsive-img" src="img/muni/des.png">
+               
+    
+            </div>
+            <div class="col s6 desc ">
+                <img class="materialboxed responsive-img" src="img/muni/cc.webp">
+               
+    
+            </div>
+
+
+        </div>
+        </p>
+
+        <br>
+        <h5>Onboarding Experience</h5>
+        <p>Since the vast majority of locals are most familiar with and use the Clipper card to get around, many of the
+            app's users are often first time visitors from out of town. <b>Thus, I wanted to create a simple onboarding
+                flow
+                to make Muni Mobile more accessible and approachable.</b>
+        </p>
+
+        <p>I initially experimented with creating a flow based on questions - such as asking if it was their first time
+            in San Francisco and how long they planned to stay for. The intention behind this was to surface guidance
+            tor travel - for example, that Muni offers multiple more cost-effective day passes that might not be known to visitors.</p>
+
+
+        <div class="col s12 desc padding">
+            <img class="materialboxed responsive-img" src="img/muni/onb1.PNG">
+            An early prototype of the onboarding screen involving questions to give the user a more tailored experience
+            <h6></h6>
+        </div>
+        <p>However, after mapping it out it felt like it was a lot of unnecessary screens and long paragraphs that would
+            quickly be skipped. The information, while important, could just as easily been highlighted or made obvious
+            through the app itself.</p>
+
+        <p> After researching existing onboarding experiences, I decided to go with a simple flow highlighting the
+            purpose of the app, as well as provide a rudimentary tutorial for navigating the application.</p>
+
+
+        <div class="row padding">
+            <div class="col s3 desc">
+                <img class="materialboxed responsive-img" src="img/muni/o1.png">
+
+            </div>
+            <div class="col s3 desc">
+                <img class="materialboxed responsive-img" src="img/muni/o2.png">
+
+            </div>
+            <div class="col s3 desc">
+                <img class="materialboxed responsive-img" src="img/muni/o3.png">
+
+            </div>
+            <div class="col s3 desc">
+                <img class="materialboxed responsive-img" src="img/muni/o4.png">
+
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                In addition to the onboarding flow, I wanted to follow it up with a light tutorial to quickly direct the
+                user towards the
+                features just highlighted.
+            </p>
+
+            <div class="row padding">
+                <div class="col s3 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/2.0.png">
+
+                </div>
+                <div class="col s3 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/2.11.png">
+
+                </div>
+                <div class="col s3 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/2.2.png">
+
+                </div>
+                <div class="col s3 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/2.3.png">
+
+                </div>
+            </div>
+            <p> As a way to ease in new users, a low information dense onboarding and tutorial flow reduces the barrier
+                to entry.
+            </p>
+        </div>
+
+
+
+        <div class="row">
+            <h5>Ticket Viewing and Activation Flow</h5>
+            <p>As the majority of users of the Muni Mobile app were using it for its ticketing feature, I wanted to make
+                sure
+                the task of browsing, viewing, and activating tickets was as seamless as possible.
+
+
+            </p>
+            <p>In some early iterations below, I wanted to figure out the best way to display the tickets while making
+                the distinction between
+                how to buy tickets, view current active tickets, inactive tickets, ticket history obvious.
+
+                <br>
+                <br> Differentiating the inactive vs active tickets was important - once a user buys a ticket, it needs
+                to be activated in order to be used.
+
+
+
+
+            </p>
+
+            <div class="col s12 desc padding">
+                <img class="materialboxed responsive-img" src="img/muni/ticketproto.png">
+                <h6>Wireframes of different ways of displaying the My Tickets tab</h6>
+
+            </div>
+
+            <p>
+                I combined elements of these early prototypes, such as separating out the Buy Tickets into its own
+                button, increasing the size of the ticket for readability, and placing the use/view ticket button on the
+                side of the ticket to be akin to 'tearing' the ticket and increasing space for information.
+
+            </p>
+
+            <div class="row padding">
+                <div class="col s4 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/3.0.png">
+
+                </div>
+                <div class="col s4 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/3.1.png">
+
+                </div>
+                <!-- <div class="col s3 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/3.2.png">
+
+                </div> -->
+                <div class="col s4 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/3.33.png">
+
+                </div>
+
+            </div>
+
+            <p>
+                Since 'Use Ticket' is an irreversible action with a time expiration, I wanted to make sure there was an
+                additional action for confirmation.
+
+            </p>
+
+
+
+            <p>
+                After the activation of the ticket, the ticket becomes 'Active', denoted by the Active pill as well as
+                the red color on the left of the stub. The action 'Use Ticket' also changes to 'View Ticket', and there
+                is an active expiration countdown timer.
+            </p>
+            <p>
+                For viewing past tickets, many users noted that past tickets were not purchasable, a feature which was
+                popular in the previous iteration of the app. Here I integrated a quick buy feature from old tickets,
+                which takes fewer steps than the default checkout flow. Past tickets are greyed out while retaining the
+                action to buy, and also shows if the ticket was 'Used' or 'Expired'</p>
+
+            <div class="row padding">
+                <div class="col s4 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/3.5.png">
+
+                </div>
+                <div class="col s4 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/3.6.png">
+
+                </div>
+    
+                <div class="col s4 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/3.2.png">
+
+                </div>
+
+            </div>
+            <p>
+                Using the ticket brings you to the ticketing QR code, which is loosely based on existing old school Muni
+                ticket stubs. I wanted this screen to be simple with maximum contrast so that it could be easily scanned
+                by fare enforcement.
+
+            </p>
+
+
+
+        </div>
+        <div class="row">
+            <h5>Ticket Purchasing Flow</h5>
+            <p>For the ticket purchasing flow, I first wanted to add a <b>'Favorite Tickets'</b> feature for easy access
+                to
+                most commonly used tickets.
+                I also gave each ticket type its own tab to simplify viewing the catalog.
+            </p>
+
+
+            <div class="row padding">
+                <div class="col s4 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/4.1.png">
+
+                </div>
+                <div class="col s4 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/4.2.png">
+
+                </div>
+                <!-- <div class="col s3 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/3.2.png">
+
+                </div> -->
+                <div class="col s4 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/4.3.png">
+
+                </div>
+
+            </div>
+
+            <p>
+                Only after adding to cart does the 'View Cart' button with the number of tickets and price show up -
+                from there the payment flow defaults to your selected payment and confirms your tickets went through.
+
+            </p>
+
+
+
+            <div class="row padding">
+                <div class="col s3 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/4.9.png">
+
+                </div>
+                <div class="col s3 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/5.0.png">
+
+                </div>
+                <div class="col s3 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/5.1.png">
+
+                </div>
+                <!-- <div class="col s3 desc">
+                        <img class="materialboxed responsive-img" src="img/muni/3.2.png">
+    
+                    </div> -->
+                <div class="col s3 desc">
+                    <img class="materialboxed responsive-img" src="img/muni/5.2.png">
+
+                </div>
+
+            </div>
+            <p>
+                Purchasing the tickets navigates you back to Your Tickets, where the 'New' pill highlights its recent
+                purchase.
+
+            </p>
+
+        </div>
+
+        <div class="row">
+
+            <h4>
+                Reflections
+            </h4>
+            <p>Overall it was a challenge translate a deceptively complicated flows into an experience that was easy to understand - ticketing, for example, had a lot of nuances
+                regarding activation and viewing that would be complicated to new users of the system. In the end, focusing on clarity and signaling of new states through color and animation really helped differentiate parts of the process. 
+        </div>
+    
+
+        <div class="row">
+
+            <h4>
+                Interactive Prototype + Video
+            </h4>
+            <div class="col s12 desc">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://embed.figma.com/proto/hzwxOlaSlY0CtCmAiN32Jk/Muni-Mobile-Redesign?node-id=268-1377&scaling=contain&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>
+            </div>
+
+            <iframe src="https://www.youtube.com/embed/IN0nRZKSeT0?si=FWoNF2zp3mU-sUdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          
+        </div>
+
+
+
+        <div class="space">
+        </div>
+    </div>

@@ -60,7 +60,14 @@ nav ul a:hover {
 
 .port-body {
 	line-height: 1.7;
-	width:50%;
+	width:65%;
+	font-size: 19px;
+}
+
+.muni-splash {
+	width:80%;
+	margin: 0 auto;
+	margin-bottom:80px;
 }
 
 @keyframes fadeInUp {
@@ -104,8 +111,19 @@ nav {
 	margin-top: 50px;
 }
 
+.nocontainer{
+	left: 50%;
+	margin-left: -100vw;
+	/* margin-right: -50vw; */
+	max-width: 100vw;
+	position: relative;
+	right: 50%;
+	width: 100vw;
+}
 .port-header{
-	text-align:center;
+	/* text-align:center; */
+	text-align: left;
+
 }
 
 .aboutrow{
@@ -124,6 +142,25 @@ nav .nav-wrapper {
 .nav-wrapper {
 	transition: .5s;
 	padding: 20px;
+}
+
+.desc {
+	font-size: 15px;
+
+}
+
+.padding {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+iframe, object, embed {
+    width: 100%;
+	height: 100%;
+}
+.muni ul li{
+	margin-top: 10px;
+	list-style-type: square;
 }
 
 .altnav {
