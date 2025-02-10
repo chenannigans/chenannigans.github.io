@@ -83,22 +83,30 @@ nav ul a:hover {
 	animation: 1.0s fadeInUp;
   }
 
+  .heading {
+	font-size: 34px;
+  }
+
 /*
 h3, h4{
 	color:#14b2c6;
 }*/
 nav ul li{
-	color: teal;
+	/* color: teal; */
 }
 
 nav .brand-logo {
 	/* color: #14b2c6; */
-	color: teal;
+	/* color: teal; */
 	font-size: 30px;
 }
 
 .imagepad{
 	margin: 30px 0px;
+}
+
+.push {
+	margin-top: 100px;
 }
 
 nav {
