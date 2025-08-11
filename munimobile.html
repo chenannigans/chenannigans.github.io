@@ -1,34 +1,29 @@
 <html>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-</style>
+    <style>
+		@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+	</style>
 
 <head>
-    <!-- Google Analytics -->
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" type="image/png" href="http://chenannigans.github.io/favicon.png" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <!-- End Google Analytics -->
-    <link rel="stylesheet" type="text/css" href="css/materialize.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Share+Tech+Mono&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="http://chenannigans.github.io/favicon.png" />
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
-
-
+	<link
+		href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
     <script>
         $(document).ready(function () {
             $('.materialboxed').materialbox();
             $('.scrollspy').scrollSpy();
             $('.material-tooltip').tooltip({ delay: 50 });
+            $('.sidenav').sidenav();
+			$('.dropdown-trigger').dropdown({ hover: true });
 
 
             $('.target').pushpin({
@@ -39,39 +34,31 @@
 
         });
 
+
+        document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
     </script>
 
-    <div class="navbar">
-        <nav>
-            <div class="nav-wrapper white">
-                <a href="index.html" class="brand-logo">ann chen</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li> <a href="index.html"> work </a> </li>
-
-                    <li> <a target="_blank" href="resume.25.pdf"> resume </a> </li>
-                    <li> <a href="about.html"> about </a> </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <div class="navbar-fixed">
-		<ul id="dropdown1" class="dropdown-content">
-			<li><a href="portfolio.html">ui/ux</a></li>
-			<li><a href="graphics.html">graphic design</a></li>
-			<!-- <li><a href="comics.html!">comics</a></li> -->
-		</ul>
-		<nav>
-			<div class="nav-wrapper white">
-				<a href="index.html" class="brand-logo">ann chen</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li> <a href="about.html"> about </a> </li>
-					<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">portfolio</a></li>
-					<li> <a href="art.html"> art </a> </li>
-					<li> <a target="_blank" href="resume.25.pdf"> resume </a> </li>
-				</ul>
-			</div>
-		</nav>
-	</div>
+<div class="navbar-fixed">
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="portfolio.html">ui/ux</a></li>
+        <li><a href="graphics.html">graphic design</a></li>
+        <!-- <li><a href="comics.html">comics</a></li> -->
+    </ul>
+    <nav>
+        <div class="nav-wrapper white">
+            <a href="index.html" class="brand-logo">ann chen</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li> <a href="about.html"> about </a> </li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">portfolio</a></li>
+                <li> <a target="_blank" href="resume.25.pdf"> resume </a> </li>
+            </ul>
+        </div>
+    </nav>
+</div>
 
 </head>
 
