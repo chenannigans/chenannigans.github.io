@@ -16,7 +16,7 @@
 		rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="http://chenannigans.github.io/favicon.png" />
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -29,7 +29,7 @@
 			$('.materialboxed').materialbox();
 			$('.scrollspy').scrollSpy();
 			$('.material-tooltip').tooltip({ delay: 50 });
-
+			$('.dropdown-trigger').dropdown({ hover: true });
 
 			$('.target').pushpin({
 				top: 1000,
@@ -41,20 +41,23 @@
 
 	</script>
 
-	<div class="navbar">
+	<div class="navbar-fixed">
+		<ul id="dropdown1" class="dropdown-content">
+			<li><a href="portfolio.html">ui/ux</a></li>
+			<li><a href="graphics.html">graphic design</a></li>
+			<!-- <li><a href="comics.html!">comics</a></li> -->
+		</ul>
 		<nav>
 			<div class="nav-wrapper white">
-			<a href="index.html" class="brand-logo">ann chen</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li> <a href="index.html"> work </a> </li>
-			
-				<li> <a target="_blank" href="resume.25.pdf"> resume </a> </li>
-				<li> <a href="about.html"> about </a> </li>
-			</ul>
-		</div>
+				<a href="index.html" class="brand-logo">ann chen</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li> <a href="about.html"> about </a> </li>
+					<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">portfolio</a></li>
+					<li> <a target="_blank" href="resume.25.pdf"> resume </a> </li>
+				</ul>
+			</div>
 		</nav>
 	</div>
-
 </head>
 
 <div class="port-row fadeInUp-animation">
