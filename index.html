@@ -1,11 +1,9 @@
-<html>
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 </style>
 
 <head>
 	<link rel="stylesheet" type="text/css" href="css/materialize.css">
-
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" type="image/png" href="http://chenannigans.github.io/favicon.png" />
@@ -15,64 +13,73 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-
 	<link
 		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Share+Tech+Mono&display=swap"
 		rel="stylesheet">
-	<title>ann chen ux design + engineer</title>
+
 
 	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			var elems = document.querySelectorAll('.materialboxed');
-			var instances = M.Materialbox.init(elems, options);
-		});
-
-		// Or with jQuery
-
 		$(document).ready(function () {
-			$('.materialboxed').materialbox();
-			$(".dropdown-trigger").dropdown();
+			$('.tooltipped').tooltip({ delay: 50 });
+			$('.dropdown-trigger').dropdown({ hover: true });
 
 		});
-
 	</script>
 
+	<div class="navbar-fixed">
+		<ul id="dropdown1" class="dropdown-content">
+			<li><a href="portfolio.html">ui/ux</a></li>
+			<li><a href="graphics.html">graphic design</a></li>
+			<!-- <li><a href="comics.html">comics</a></li> -->
+		</ul>
+		<nav>
+			<div class="nav-wrapper white">
+				<a href="index.html" class="brand-logo">ann chen</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li> <a href="about.html"> about </a> </li>
+					<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">portfolio</a></li>
+					<li> <a target="_blank" href="resume.25.pdf"> resume </a> </li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
 </head>
-
-
-<div class="navbar-fixed">
-	<nav>
-		<div class="nav-wrapper white">
-			<a href="index.html" class="brand-logo">ann chen</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li> <a href="index.html"> work </a> </li>
-
-				<li> <a target="_blank" href="resume.25.pdf"> resume </a> </li>
-				<li> <a href="about.html"> about </a> </li>
-			</ul>
+<div class="container">
+	<div class="row aboutrow">
+		<div class="col s6 myface">
+			<img class="responsive-img img-down" src="img/headshot0.jpg">
 		</div>
-	</nav>
-</div>
+		<div class="col s6">
+			<div class="abouttext">
 
-<!-- <div class="container"> -->
+				<h3>Hey there!</h3>
+				I'm Ann - a San Francisco based product designer, former engineer, comic artist, and very occasional stand-up
+				comedian who's always looking to find joy in everyday mundanity.
+				
+				<p>After working for 5 years at Capital One as a hybrid front-end developer and designer, I'm now 
+					currently improving user experience and tech accessibility for an app in the nonprofit space.
+				<p>Outside of work you can usually catch me practicing bass, walking to the library, at table tennis practice, or cranking out food reviews! 
 
-<div class="container-small">
 
-	<div class="row">
-			<a href="munimobile.html">
-				<img class="responsive-img" src="img/tw/18.png">
-			</a>
+				</p>
+			</div>
+			<!-- <div class = "row">
 
+					<div class = "col s9">
+						
+						<a href="mailto:ann@chenannigans.com" target="_top">Email</a> |
+						<a href = "https://github.com/chenannigans" target= "_blank">Github</a> |
+						<a href = "https://www.linkedin.com/pub/ann-chen/b5/88a/945" target= "_blank">LinkedIn</a>  |
+						<a href = "https://www.nextio.com/annchen" target= "_blank">Nextio</a>  |
+						<a href = "resume.pdf" target = "_blank">Resume</a> 
+ 
+					</div>
+				</div> -->
+		</div>
 
 	</div>
-	<div class="row">
-			<a href="teamworks.html">
-				<img class="responsive-img" src="img/tw/20.png">
-			</a>
 
-
-	</div>
-	<!-- </div> -->
 </div>
 
 </html>

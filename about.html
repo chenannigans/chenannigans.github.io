@@ -1,18 +1,17 @@
-<html>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+</style>
 
 <head>
-	<!-- Google Analytics -->
-
-	<!-- End Google Analytics -->
 	<link rel="stylesheet" type="text/css" href="css/materialize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
-
 	<link rel="shortcut icon" type="image/png" href="http://chenannigans.github.io/favicon.png" />
-
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 	<link
 		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Share+Tech+Mono&display=swap"
@@ -22,20 +21,26 @@
 	<script>
 		$(document).ready(function () {
 			$('.tooltipped').tooltip({ delay: 50 });
+			$('.dropdown-trigger').dropdown({ hover: true });
+
 		});
 	</script>
 
 	<div class="navbar-fixed">
+		<ul id="dropdown1" class="dropdown-content">
+			<li><a href="portfolio.html">ui/ux</a></li>
+			<li><a href="graphics.html">graphic design</a></li>
+			<!-- <li><a href="comics.html">comics</a></li> -->
+		</ul>
 		<nav>
 			<div class="nav-wrapper white">
-			<a href="index.html" class="brand-logo">ann chen</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li> <a href="index.html"> work </a> </li>
-			
-				<li> <a target="_blank" href="resume.25.pdf"> resume </a> </li>
-				<li> <a href="about.html"> about </a> </li>
-			</ul>
-		</div>
+				<a href="index.html" class="brand-logo">ann chen</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li> <a href="about.html"> about </a> </li>
+					<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">portfolio</a></li>
+					<li> <a target="_blank" href="resume.25.pdf"> resume </a> </li>
+				</ul>
+			</div>
 		</nav>
 	</div>
 
@@ -48,15 +53,15 @@
 		<div class="col s6">
 			<div class="abouttext">
 
-				<h3>Hi there!</h3>
-				I'm Ann - a San Francisco based UX designer, ex-engineer, comic artist, and very occasional stand-up
-				comedian who loves the playfulness and empathy
-				possible with human-centered design.
-				<!-- After 5 years in industry as a front-end software developer, I realized what I loved most about my job
-				wasn't the heads down coding, but the times where I had to put my design hat on to fill gaps in our
-				product. -->
-				<p>Drawing from my background as a UI developer, I'm excited to craft both meticulous and stylish
-					experiences that I hope can make tasks just a bit more fun!
+				<h3>Hey there!</h3>
+				I'm Ann - a San Francisco based product designer, former engineer, comic artist, and very occasional stand-up
+				comedian who's always looking to find joy in everyday mundanity.
+				
+				<p>After working for 5 years at Capital One as a hybrid front-end developer and designer, I'm now 
+					currently improving user experience and tech accessibility for an app in the nonprofit space.
+				<p>Outside of work you can usually catch me practicing bass, walking to the library, at table tennis practice, or cranking out food reviews! 
+
+
 				</p>
 			</div>
 			<!-- <div class = "row">

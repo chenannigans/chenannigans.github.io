@@ -1,3 +1,7 @@
+/* * {
+	background-color:#fafafa;
+} */
+
 /*@font-face{
 	font-family: 'OpenSans';
 	url:('fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
@@ -122,6 +126,27 @@ nav .brand-logo {
 	transition: none;
 }
 
+.dropdown-content {
+	left: initial !important;
+	top: initial !important;
+	/* background: none !important; */
+	height: initial !important;
+	width: initial !important;
+	box-shadow: none !important;
+	opacity: 1 !important;
+	transform: none! important;
+
+	:hover{
+		opacity: 1;
+		background-color: none
+	}
+}
+
+h1 {
+	font-size: 30px;
+}
+
+
 #materialbox-overlay {
 	position: fixed;
 	top: 0;
@@ -133,8 +158,27 @@ nav .brand-logo {
 	z-index: 999;
 }
 
+:focus {
+	outline: none !important;
+	border: none !important;
+}
 
 
+.tab {
+	font-size: 20px;
+}
+
+
+.row-pad {
+	margin-top:100px;
+}
+
+
+.container-lg {
+	width: 85%;
+	margin: 0 auto;
+	padding: 40px;
+}
 .push {
 	margin-top: 100px;
 }
@@ -146,7 +190,7 @@ img:hover {
 }
 
 nav {
-	opacity: .9;
+	opacity: .95;
 }
 
 .space {
@@ -188,12 +232,12 @@ nav {
 }
 
 nav .nav-wrapper {
-	padding: 25px;
+	/* padding: 25px; */
 }
 
 .nav-wrapper {
-	transition: .5s;
 	padding: 20px;
+	padding-bottom: 80px !important;
 }
 
 .desc {
@@ -295,7 +339,7 @@ embed {
 }
 
 a:hover {
-	opacity: .4;
+	/* opacity: .4; */
 	transition: .1s;
 }
 
