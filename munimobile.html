@@ -1,34 +1,28 @@
 <html>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-</style>
+    <style>
+		@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+	</style>
 
 <head>
-    <!-- Google Analytics -->
-
-    <!-- End Google Analytics -->
-    <link rel="stylesheet" type="text/css" href="css/materialize.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Share+Tech+Mono&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="http://chenannigans.github.io/favicon.png" />
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" type="image/png" href="http://chenannigans.github.io/favicon.png" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
 
-
+	<link
+		href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
     <script>
         $(document).ready(function () {
             $('.materialboxed').materialbox();
             $('.scrollspy').scrollSpy();
             $('.material-tooltip').tooltip({ delay: 50 });
+            $('.sidenav').sidenav();
 			$('.dropdown-trigger').dropdown({ hover: true });
 
 
@@ -40,26 +34,31 @@
 
         });
 
+
+        document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
     </script>
 
-    <div class="navbar-fixed">
-		<ul id="dropdown1" class="dropdown-content">
-			<li><a href="portfolio.html">ui/ux</a></li>
-			<li><a href="graphics.html">graphic design</a></li>
-			<!-- <li><a href="comics.html!">comics</a></li> -->
-		</ul>
-		<nav>
-			<div class="nav-wrapper white">
-				<a href="index.html" class="brand-logo">ann chen</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li> <a href="about.html"> about </a> </li>
-					<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">portfolio</a></li>
-					<li> <a href="art.html"> art </a> </li>
-					<li> <a target="_blank" href="resume.25.pdf"> resume </a> </li>
-				</ul>
-			</div>
-		</nav>
-	</div>
+<div class="navbar-fixed">
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="portfolio.html">ui/ux</a></li>
+        <li><a href="graphics.html">graphic design</a></li>
+        <!-- <li><a href="comics.html">comics</a></li> -->
+    </ul>
+    <nav>
+        <div class="nav-wrapper white">
+            <a href="index.html" class="brand-logo">ann chen</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li> <a href="about.html"> about </a> </li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">portfolio</a></li>
+                <li> <a target="_blank" href="resume.25.pdf"> resume </a> </li>
+            </ul>
+        </div>
+    </nav>
+</div>
 
 </head>
 
@@ -97,12 +96,7 @@
     <div class="row">
         <h4>Research</h4>
         <p>
-            Given the rather low ratings on the app store, I started by combing the reviews to look for pain points and
-            patterns that were working out.
-        </p>
-        <p>
-
-            As you can see, not the most glowing reviews.
+            I started by combing the reviews to investigate common pain points and patterns.
         </p>
 
     </div>
@@ -289,12 +283,13 @@
         <div class="row">
             <h5>Ticket Viewing and Activation Flow</h5>
             <p>As the majority of users of the Muni Mobile app were using it for its ticketing feature, I prioritized
-                
+
                 making the task of browsing, viewing, and activating tickets as seamless as possible.
 
 
             </p>
-            <p>In some early iterations below, I tried out different configurations for the best way to display the tickets while making
+            <p>In some early iterations below, I tried out different configurations for the best way to display the
+                tickets while making
                 the distinction between
                 how to buy tickets, view current active tickets, inactive tickets, ticket history obvious.
 
@@ -342,7 +337,8 @@
 
             <p>
                 Since 'Use Ticket' is an irreversible action with a time expiration, the pop up ensures there is an
-                additional action before committing. It also guards against accidentally hitting the button while scrolling.
+                additional action before committing. It also guards against accidentally hitting the button while
+                scrolling.
 
             </p>
 
@@ -496,9 +492,9 @@
                 src="https://embed.figma.com/proto/hzwxOlaSlY0CtCmAiN32Jk/Muni-Mobile-Redesign?node-id=268-1377&scaling=contain&content-scaling=fixed&embed-host=share"
                 allowfullscreen></iframe>
         </div>
-</div>
-<div class="row">
-    <h5 class="spacing">Youtube Walkthrough</h5>
+    </div>
+    <div class="row">
+        <h5 class="spacing">Youtube Walkthrough</h5>
 
         <iframe src="https://www.youtube.com/embed/IN0nRZKSeT0?si=FWoNF2zp3mU-sUdM" title="YouTube video player"
             frameborder="0"
