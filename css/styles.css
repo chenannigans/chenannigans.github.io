@@ -31,7 +31,7 @@
 
 .title {
 	font-family: 'Archivo';
-	margin-top: 18px;
+	margin-top: 20px;
 	/* font-size: 20px; */
 	font-weight: 500;
 }
@@ -39,7 +39,7 @@
 .subtitle {
 	font-family: 'Archivo';
 	font-size: 20px;
-	margin-bottom: 10px;
+	margin-bottom: 40px;
 	font-weight: 300;
 }
 
@@ -48,7 +48,7 @@ h2 {
 }
 
 nav ul a {
-	/* color: #14b2c6; */
+	font-size: 25px;
 	color: black;
 }
 
@@ -222,7 +222,7 @@ nav {
 }
 
 .row .col {
-	padding: 0px !important;
+	padding: 3px !important;
 }
 
 .port-header {
@@ -483,12 +483,12 @@ body {
 	}
 
 	nav .brand-logo {
-		font-size: 25px;
+		font-size: 30px;
 		margin-left: 5px;
 	}
 
 	nav ul a {
-		font-size: 16px;
+		font-size: 20px;
 	}
 
 	.nav-wrapper {
@@ -521,15 +521,15 @@ body {
 	}
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
 
 	nav .brand-logo {
-		font-size: 20px;
+		font-size: 30px;
 		margin-left: 5px;
 	}
 
 	nav ul a {
-		font-size: 12px;
+		font-size: 20px;
 		padding: 0 10px;
 	}
-}
+} */
