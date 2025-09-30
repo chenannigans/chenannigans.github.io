@@ -455,10 +455,10 @@ body {
 }
 
 .about-page {
-		margin-top: 0px;
-		margin-bottom: 20px;
-		margin-left: 20px;
-	}
+	margin-top: 0px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
 
 
 @media (max-width: 900px) {
@@ -467,7 +467,7 @@ body {
 	.container-portfolio {
 		width: 80%;
 
-		
+
 	}
 
 	.abouttext {
@@ -488,7 +488,7 @@ body {
 	.right {
 		float: right !important;
 		margin: 0 auto !important;
-		
+
 	}
 
 	nav .brand-logo {
@@ -524,7 +524,7 @@ body {
 		margin-bottom: 20px
 	}
 
-	
+
 
 	.title {
 		margin-top: 10px;
@@ -540,8 +540,14 @@ body {
 	}
 }
 
-@media (max-width: 600px) {
-nav ul a {
+@media (max-width: 400px) {
+
+	nav .brand-logo {
+		font-size: 22px;
+		margin-left: 5px;
+	}
+	nav ul a {
 		font-size: 12px;
+		padding: 0 10px;
 	}
 }
