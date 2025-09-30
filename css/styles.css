@@ -454,6 +454,11 @@ body {
 	margin-bottom: 150px
 }
 
+.about-page {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		margin-left: 20px;
+	}
 
 
 @media (max-width: 900px) {
@@ -486,6 +491,11 @@ body {
 		
 	}
 
+	nav .brand-logo {
+		font-size: 25px;
+		margin-left: 5px;
+	}
+
 	nav ul a {
 		font-size: 16px;
 	}
@@ -513,6 +523,8 @@ body {
 		margin-top: 0px;
 		margin-bottom: 20px
 	}
+
+	
 
 	.title {
 		margin-top: 10px;
