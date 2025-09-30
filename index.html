@@ -1,9 +1,14 @@
+<html>
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+</style>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 </style>
 
 <head>
 	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" type="image/png" href="http://chenannigans.github.io/favicon.png" />
@@ -13,73 +18,110 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Share+Tech+Mono&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet">
-
+	<title>ann chen ux design + engineer</title>
 
 	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var elems = document.querySelectorAll('.materialboxed');
+			var instances = M.Materialbox.init(elems, options);
+		});
+
+		// Or with jQuery
+
 		$(document).ready(function () {
-			$('.tooltipped').tooltip({ delay: 50 });
+			$('.materialboxed').materialbox();
 			$('.dropdown-trigger').dropdown({ hover: true });
 
 		});
+
 	</script>
 
-	<div class="navbar-fixed">
-		<ul id="dropdown1" class="dropdown-content">
-			<li><a href="portfolio.html">ui/ux</a></li>
-			<li><a href="graphics.html">graphic design</a></li>
-			<!-- <li><a href="comics.html">comics</a></li> -->
-		</ul>
-		<nav>
-			<div class="nav-wrapper white">
-				<a href="index.html" class="brand-logo">ann chen</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li> <a href="about.html"> about </a> </li>
-					<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">portfolio</a></li>
-					<li> <a target="_blank" href="resume.25.pdf"> resume </a> </li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-
 </head>
-<div class="container">
-	<div class="row aboutrow">
-		<div class="col s6 myface">
-			<img class="responsive-img img-down" src="img/headshot0.jpg">
+
+
+<div class="navbar-fixed">
+	<ul id="dropdown1" class="dropdown-content">
+		<li><a href="portfolio.html">ui/ux</a></li>
+		<li><a href="graphics.html">graphic design</a></li>
+		<!-- <li><a href="comics.html">comics</a></li> -->
+	</ul>
+	<nav>
+		<div class="nav-wrapper white">
+			<a href="index.html" class="brand-logo">ann chen</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li> <a href="about.html"> about </a> </li>
+				<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">portfolio</a></li>
+				<li> <a target="_blank" href="resume.25.pdf"> resume </a> </li>
+			</ul>
 		</div>
-		<div class="col s6">
-			<div class="abouttext">
-
-				<h3>Hey there!</h3>
-				I'm Ann - a San Francisco based product designer, former engineer, comic artist, and very occasional stand-up
-				comedian who's always looking to find joy in everyday mundanity.
-				
-				<p>After working for 5 years at Capital One as a hybrid front-end developer and designer, I'm now 
-					currently improving user experience and tech accessibility for an app in the nonprofit space.
-				<p>Outside of work you can usually catch me practicing bass, walking to the library, at table tennis practice, or cranking out food reviews! 
+	</nav>
+</div>
 
 
-				</p>
-			</div>
-			<!-- <div class = "row">
+<!-- <div class="container"> -->
 
-					<div class = "col s9">
-						
-						<a href="mailto:ann@chenannigans.com" target="_top">Email</a> |
-						<a href = "https://github.com/chenannigans" target= "_blank">Github</a> |
-						<a href = "https://www.linkedin.com/pub/ann-chen/b5/88a/945" target= "_blank">LinkedIn</a>  |
-						<a href = "https://www.nextio.com/annchen" target= "_blank">Nextio</a>  |
-						<a href = "resume.pdf" target = "_blank">Resume</a> 
- 
-					</div>
-				</div> -->
+<div class="container-portfolio">
+	<div class="row row-pad aboutrow s12 m8">
+		<div class="col s12 m8 abouttext">
+			<h4>Hey there!</h4>
+<p>Ann here! I’m a San Francisco based product designer, former engineer,  comic artist and very occasional stand-up comedian who’s passionate about  human-centered design and making tech more accessible for everyone.
+<br> <br>
+	Currently crafting flows for Project Protocol, a web app working to empower people in the reentry space. </p>
 		</div>
+		</div>
+
+
+	<div class="row">
+		
+		<h4>Projects</h4>
+
+		<a href="munimobile.html">
+			<img class="responsive-img" src="img/proprosplash.png">
+		</a>
+		<div class="title">
+			<span class="title grey-text">Project Protocol &nbsp;</span>
+			Authentication Flow, Design System Maintenance
+		</div>
+		<div class="subtitle">Overhauling the registration and login flows with special consideration for low tech
+			users. Upgrading the visual
+			language and organizing the design system.</div>
+
+
+	</div>
+	<div class="row">
+		<a href="munimobile.html">
+			<img class="responsive-img" src="img/twsplash.png">
+		</a>
+		<div class="title">
+			<span class="title grey-text">Capital One&nbsp;</span>
+			Technology Evaluation Workflow Tool
+		</div>
+		<div class="subtitle">In partnership with the Venture team to keep track of what companies/technologies they’re
+			evaluating</div>
+
+
+	</div>
+	<div class="row">
+		<a href="munimobile.html">
+			<img class="responsive-img" src="img/munisplash.png">
+		</a>
+		<div class="title">
+			<span class="title grey-text">UX Concept&nbsp;</span>
+			Muni Mobile Redesign
+		</div>
+		<div class="subtitle">In search of relief from the notorious San Francisco transit app</div>
+
 
 	</div>
 
+
+
+	<!-- </div> -->
 </div>
 
 </html>
