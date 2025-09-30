@@ -101,7 +101,7 @@ nav ul a:hover {
 }
 
 .fadeInUp-animation {
-	animation: 1.0s fadeInUp;
+	animation: 1.2s fadeInUp;
 }
 
 .heading {
@@ -190,7 +190,7 @@ h1 {
 }
 
 .container-portfolio {
-	width:75%;
+	width:65%;
 	margin: 0 auto;
 
 }
@@ -252,9 +252,9 @@ nav {
 
 .abouttext {
 	font-size: 17px;
-	margin-top: 40px;
+	margin-top: 60px;
 	margin-left: 50px;
-	margin-bottom:100px
+	margin-bottom:150px
 }
 
 nav .nav-wrapper {
