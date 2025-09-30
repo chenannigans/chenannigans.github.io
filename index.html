@@ -36,6 +36,8 @@
 		$(document).ready(function () {
 			$('.materialboxed').materialbox();
 			$('.dropdown-trigger').dropdown({ hover: true });
+			    $('.sidenav').sidenav();
+
 
 		});
 
@@ -50,12 +52,16 @@
 		<li><a href="graphics.html">graphic design</a></li>
 		<!-- <li><a href="comics.html">comics</a></li> -->
 	</ul>
+	
 	<nav>
 		<div class="nav-wrapper white">
-			<a href="index.html" class="brand-logo">ann chen</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
+			<a href="index.html" class="brand-logo hide-on-med-and-down">ann chen</a>
+			<ul id="nav-mobile" class="right">
 				<li> <a href="about.html"> about </a> </li>
-				<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">portfolio</a></li>
+				<li> <a href="portfolio.html"> ui + ux </a> </li>
+				<li> <a href="graphics.html"> graphics </a> </li>
+
+
 				<li> <a target="_blank" href="resume.25.pdf"> resume </a> </li>
 			</ul>
 		</div>
@@ -66,10 +72,10 @@
 <!-- <div class="container"> -->
 
 <div class="container-portfolio">
-	<div class="row row-pad aboutrow s12 m8">
-		<div class="col s12 m8 abouttext">
+	<div class="row row-pad aboutrow ">
+		<div class="col s12 m9 abouttext">
 			<h4>Hey there!</h4>
-<p>Ann here! I’m a San Francisco based product designer, former engineer,  comic artist and very occasional stand-up comedian who’s passionate about  human-centered design and making tech more accessible for everyone.
+<p class="flow-text">Ann here! I’m a San Francisco based product designer, former engineer,  comic artist and very occasional stand-up comedian who’s passionate about  human-centered design and making tech more accessible for everyone.
 <br> <br>
 	Currently crafting flows for Project Protocol, a web app working to empower people in the reentry space. </p>
 		</div>
@@ -83,17 +89,17 @@
 		<a href="munimobile.html">
 			<img class="responsive-img" src="img/proprosplash.png">
 		</a>
-		<div class="title">
-			<span class="title grey-text">Project Protocol &nbsp;</span>
+		<div class="title flow-text">
+			<span class="title grey-text flow-text">Project Protocol &nbsp;</span>
 			Authentication Flow, Design System Maintenance
 		</div>
-		<div class="subtitle">Overhauling the registration and login flows with special consideration for low tech
+		<div class="subtitle flow-text">Overhauling the registration and login flows with special consideration for low tech
 			users. Upgrading the visual
 			language and organizing the design system.</div>
 
 
 	</div>
-	<div class="row">
+	<div class="row flow-text">
 		<a href="munimobile.html">
 			<img class="responsive-img" src="img/twsplash.png">
 		</a>
@@ -106,7 +112,7 @@
 
 
 	</div>
-	<div class="row">
+	<div class="row flow-text">
 		<a href="munimobile.html">
 			<img class="responsive-img" src="img/munisplash.png">
 		</a>
