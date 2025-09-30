@@ -37,15 +37,15 @@
 
 .title {
 	font-family: 'Archivo';
-	margin-top:18px;
+	margin-top: 18px;
 	/* font-size: 20px; */
 	font-weight: 500;
 }
 
 .subtitle {
 	font-family: 'Archivo';
-	font-size:20px;
-	margin-bottom:10px;
+	font-size: 20px;
+	margin-bottom: 10px;
 	font-weight: 200;
 }
 
@@ -116,11 +116,6 @@ nav ul li {
 	/* color: teal; */
 }
 
-nav .brand-logo {
-	/* color: #14b2c6; */
-	/* color: teal; */
-	font-size: 30px;
-}
 
 .imagepad {
 	margin: 30px 0px;
@@ -150,9 +145,9 @@ nav .brand-logo {
 	width: initial !important;
 	box-shadow: none !important;
 	opacity: 1 !important;
-	transform: none! important;
+	transform: none ! important;
 
-	:hover{
+	:hover {
 		opacity: 1;
 		background-color: none
 	}
@@ -186,20 +181,17 @@ h1 {
 
 
 .row-pad {
-	margin-top:100px;
+	margin-top: 100px;
 }
 
-.container-portfolio {
-	width:65%;
-	margin: 0 auto;
 
-}
 
 .container-lg {
 	width: 85%;
 	margin: 0 auto;
 	padding: 40px;
 }
+
 .push {
 	margin-top: 100px;
 }
@@ -250,12 +242,6 @@ nav {
 	margin-top: 100px;
 }
 
-.abouttext {
-	font-size: 17px;
-	margin-top: 60px;
-	margin-left: 50px;
-	margin-bottom:150px
-}
 
 nav .nav-wrapper {
 	/* padding: 25px; */
@@ -454,4 +440,96 @@ html,
 body {
 	margin-bottom: 0px;
 	padding-bottom: 0px;
+}
+
+.container,
+.container-portfolio {
+	width: 65%;
+	margin: 0 auto;
+}
+
+.abouttext {
+	font-size: 17px;
+	margin-top: 60px;
+	margin-bottom: 150px
+}
+
+
+
+@media (max-width: 900px) {
+
+	.container,
+	.container-portfolio {
+		width: 80%;
+
+		
+	}
+
+	.abouttext {
+		font-size: 17px;
+		margin-top: 50px;
+		margin-bottom: 150px
+	}
+}
+
+
+
+@media (max-width: 600px) {
+
+	.aboutrow {
+		margin-top: 10px;
+	}
+
+	.right {
+		float: right !important;
+		margin: 0 auto !important;
+		
+	}
+
+	nav ul a {
+		font-size: 16px;
+	}
+
+	/* nav .brand-logo {
+		color: teal;
+		font-size: 17px;
+		margin-left:5px;
+	
+
+	} */
+
+	.nav-wrapper {
+		margin: 0px !important;
+		padding: 0px !important;
+	}
+
+	.container-portfolio {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.abouttext {
+		font-size: 17px;
+		margin-top: 0px;
+		margin-bottom: 20px
+	}
+
+	.title {
+		margin-top: 10px;
+		/* font-size: 20px; */
+		font-weight: 500;
+	}
+
+	.subtitle {
+		font-family: 'Archivo';
+		font-size: 16px;
+		margin-bottom: 10px;
+		font-weight: 200;
+	}
+}
+
+@media (max-width: 600px) {
+nav ul a {
+		font-size: 12px;
+	}
 }
