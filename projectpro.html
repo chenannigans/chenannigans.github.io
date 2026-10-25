@@ -81,116 +81,148 @@
 		<p>Project Protocol is a non-profit that provides resources and shared community for people in their reentry
 			journeys.
 			While conducting user testing, we noticed some quirks in the sign in process - prompting us to rethink the
-			entire experience and rebuild the sign up and login flows with special consideration for those with lower
-			tech literacy.
+			entire experience and redesign the sign up and login flows with special consideration for our users who may
+			have lower tech literacy.
 		</p>
 	</div>
 
 	<div class="row">
 		<h4>The Problem</h4>
 		<p>
-			While observing a user navigate the site, the first issue encountered was that they didn't remember their password. This normally wouldn't have been a problem, except when going through the account retrieval flow, they also didn't receive the necessary email to recover it. After some grief, they assumed that they hadn't had an account to begin with and were forced to create a new one, creating a significant amount of friction for what should have been just a quick process. Where did it all go wrong?</p>
+			When logging in, the first issue we observed was that they were taking a long time to try various passwords,
+			often backspacing because they weren't sure what they just entered. After several failed attempts, they
+			opted to reset their password. This normally wouldn't have been a problem, except when going through the
+			account retrieval flow, they waited for the necessary email only to never receive it. After some grief, they
+			assumed that they hadn't had an account in the first place and were forced to create a new one. </p>
 
-			<p>Upon investigation of the backend, we discovered that they actually did already have an account - however, the account was made with a typo in the email. </p>
+		<p>Upon investigation later, we discovered that they actually did already have an account - however, the account
+			was made with a typo in the email and didn't match their expected one. Where did it all go wrong?
 		</p>
 	</div>
 	<div class="row">
-		<h4>Team</h4>
-		<p>
-			4 people (1 designer/engineer, 2 engineers, 1 product owner)
-		</p>
-	</div>
-	<div class="row">
-		<h4>Research</h4>
-		<p>
-			Due to the sudden prioritization of the project, we only had a week to show an initial design and prototype,
-			so we conducted a condensed research phase.
-			Stakeholders from different parts of the company were interviewed to pinpoint our core features revolving
-			around 3 types of
-			users.
-			<br>
-			<br>
-			<i>User 1: The Venture Team Member</i>
-		<p>
-			The Venture team member is the primary user of our product. They are the ones creating evaluations and
-			bringing them through the different approvals required. At all times they need to see what stage an
-			evaluation is in and the steps required to advance it. In the interview, they explained that most of their
-			information was stored in google forms and spreadsheets, so we first explored if there were ways to enhance
-			their existing workflow without creating an entirely new product. We agreed that they would benefit from a
-			more customizable dashboard, and a workflow that was easier to share and follow.</p>
-
-		<i>User 2: The Approver</i>
-		<p>
-			The evaluation needs to jump through various hoops to be approved at the company level, so certain
-			stakeholders are responsible for signing them off at various stages. The approver should be notified when
-			they need to take action, have a centralized place to find their assignments, submit documentation, and
-			approve or reject an evaluation.
-		</p>
-
-		<i>User 3: The Everyday Observer</i>
-		<p>Lastly, there are employees at the company who are not directly involved with the Ventures team but are
-			curious about the status of evaluations or have evaluations they would like to recommend themselves. It’s
-			important for them to be able to search for existing evaluations, browse the catalog of technologies, and
-			potentially request evaluations.</p>
-
-		<br>
-
-		<b>Key Takeaways</b>
-		<p>
-			The evaluation process had historically been obscured behind disparate spreadsheets, leaving many in the
-			dark
-			about the state of evaluations at the company.
-			We found that <b>transparency</b> and <b>clarity</b> were the most important aspects for our users.
-			<br><br>
-		</p>
-
-		<p>
-
-			One of the most important takeaways from the interviews is how important it was to keep a history of the
-			entire evaluation process. That way, they knew which key people were involved, why something was approved or
-			rejected, and provide transparency into an otherwise inaccessible process.
-		</p>
-	</div>
-	<div class="row">
-		<h4>Prototyping</h4>
-		<p>
-			Mockups and user flows were created using Sketch, Invision, and Capital One's internal design system.
-
-		</p>
-		<p>
-			Accounting for the quick turnaround required, we wanted to focus on the core features - an evaluation
-			request form, a dashboard, and an evaluation timeline page.
-
-		</p>
-
-		<p>
-			Wireframes for our starting 3 pages: <br>1. The evaluation intake form where our Venture team can kick
-			off the
-			process by inputting the details (replacing the Google form used prior) <br>2. The details page for a single
-			evaluation, including the steps the evaluation has gone through. <br>3. The dashboard/home page where all
-			evaluations and their statuses can be viewed.
-		</p>
 		<div class="row">
-			<div class="col s6">
-				<img class="materialboxed responsive-img" src="img/tw/mock2.jpg">
+			<h4>Research</h4>
+			<p>
+				When logging in, the first issue we observed was that they were taking a long time to try various
+				passwords, often backspacing because they weren't sure what they just entered. After several failed
+				attempts, they opted to reset their password. This normally wouldn't have been a problem, except when
+				going through the account retrieval flow, they waited for the necessary email only to never receive it.
+				After some grief, they assumed that they hadn't had an account in the first place and were forced to
+				create a new one. </p>
 
-			</div>
+			<p>Upon investigation later, we discovered that they actually did already have an account - however, the
+				account was made with a typo in the email and didn't match their expected one. Where did it all go
+				wrong?
+			</p>
+		</div>
+		<div class="row">
+			<h4>Team</h4>
+			<p>
+				4 people (1 designer/engineer, 2 engineers, 1 product owner)
+			</p>
+		</div>
+		<div class="row">
+			<h4>Research</h4>
+			<p>
+				Due to the sudden prioritization of the project, we only had a week to show an initial design and
+				prototype,
+				so we conducted a condensed research phase.
+				Stakeholders from different parts of the company were interviewed to pinpoint our core features
+				revolving
+				around 3 types of
+				users.
+				<br>
+				<br>
+				<i>User 1: The Venture Team Member</i>
+			<p>
+				The Venture team member is the primary user of our product. They are the ones creating evaluations and
+				bringing them through the different approvals required. At all times they need to see what stage an
+				evaluation is in and the steps required to advance it. In the interview, they explained that most of
+				their
+				information was stored in google forms and spreadsheets, so we first explored if there were ways to
+				enhance
+				their existing workflow without creating an entirely new product. We agreed that they would benefit from
+				a
+				more customizable dashboard, and a workflow that was easier to share and follow.</p>
 
-			<div class="col s6">
-				<img class="materialboxed responsive-img" src="img/tw/mock1.jpg">
+			<i>User 2: The Approver</i>
+			<p>
+				The evaluation needs to jump through various hoops to be approved at the company level, so certain
+				stakeholders are responsible for signing them off at various stages. The approver should be notified
+				when
+				they need to take action, have a centralized place to find their assignments, submit documentation, and
+				approve or reject an evaluation.
+			</p>
 
+			<i>User 3: The Everyday Observer</i>
+			<p>Lastly, there are employees at the company who are not directly involved with the Ventures team but are
+				curious about the status of evaluations or have evaluations they would like to recommend themselves.
+				It’s
+				important for them to be able to search for existing evaluations, browse the catalog of technologies,
+				and
+				potentially request evaluations.</p>
+
+			<br>
+
+			<b>Key Takeaways</b>
+			<p>
+				The evaluation process had historically been obscured behind disparate spreadsheets, leaving many in the
+				dark
+				about the state of evaluations at the company.
+				We found that <b>transparency</b> and <b>clarity</b> were the most important aspects for our users.
+				<br><br>
+			</p>
+
+			<p>
+
+				One of the most important takeaways from the interviews is how important it was to keep a history of the
+				entire evaluation process. That way, they knew which key people were involved, why something was
+				approved or
+				rejected, and provide transparency into an otherwise inaccessible process.
+			</p>
+		</div>
+		<div class="row">
+			<h4>Prototyping</h4>
+			<p>
+				Mockups and user flows were created using Sketch, Invision, and Capital One's internal design system.
+
+			</p>
+			<p>
+				Accounting for the quick turnaround required, we wanted to focus on the core features - an evaluation
+				request form, a dashboard, and an evaluation timeline page.
+
+			</p>
+
+			<p>
+				Wireframes for our starting 3 pages: <br>1. The evaluation intake form where our Venture team can kick
+				off the
+				process by inputting the details (replacing the Google form used prior) <br>2. The details page for a
+				single
+				evaluation, including the steps the evaluation has gone through. <br>3. The dashboard/home page where
+				all
+				evaluations and their statuses can be viewed.
+			</p>
+			<div class="row">
+				<div class="col s6">
+					<img class="materialboxed responsive-img" src="img/tw/mock2.jpg">
+
+				</div>
+
+				<div class="col s6">
+					<img class="materialboxed responsive-img" src="img/tw/mock1.jpg">
+
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="row">
-		<h4>Designs</h4>
-		<p>
-			For the designs, we stuck to a simple interface leveraging the existing Capital One design
-			language combined with
-			tools our users were used to (i.e. Google Forms and Sheets). All images below are shown with test data
-			on the development site, so please disregard any odd naming conventions.
-		</p>
-		<!-- 
+		<div class="row">
+			<h4>Designs</h4>
+			<p>
+				For the designs, we stuck to a simple interface leveraging the existing Capital One design
+				language combined with
+				tools our users were used to (i.e. Google Forms and Sheets). All images below are shown with test data
+				on the development site, so please disregard any odd naming conventions.
+			</p>
+			<!-- 
 			<b>All Evaluations </b>
 			<br> For viewing all evaluations, I wanted a clean table with clear color coded stages and sortability, with
 			options to just see Your Evaluations and with a button to request a new evaluation.
@@ -198,79 +230,83 @@
 				<img class="materialboxed responsive-img" src="img/tw/table-clean.png">
 			</div> -->
 
-		<b>Home/Dashboard</b>
-		<br> For the home page, we wanted hub where users could view their action items, an interactive graph
-		overview of all evaluations, and a sortable table showing the stages and details of the evaluations.
-		We intended this page to be modular - depending on your role you might see different items - for example,
-		only those who need to approve evaluations would be able to see the 'Pending Approvals' section.
-		<div class="imagepad">
-			<img class="materialboxed responsive-img" src="img/tw/edited-dash.png">
+			<b>Home/Dashboard</b>
+			<br> For the home page, we wanted hub where users could view their action items, an interactive graph
+			overview of all evaluations, and a sortable table showing the stages and details of the evaluations.
+			We intended this page to be modular - depending on your role you might see different items - for example,
+			only those who need to approve evaluations would be able to see the 'Pending Approvals' section.
+			<div class="imagepad">
+				<img class="materialboxed responsive-img" src="img/tw/edited-dash.png">
+			</div>
+
+			<b>Evaluation Details</b>
+			<br> After creating a new evaluation or clicking on one from the Dashboard's table, you can view all its
+			attributes and a timeline of its creation. The top half gives a rundown of the attributes and also shows
+			who's accountable for the technology. This provides the transparency and ownership required for the process
+			to move forward.
+			On the bottom, the Event Log tells a story of who's reviewed it in the past, what issues they had with it,
+			and what its current status is. By surfacing the key people involved in these decisions as well as the
+			documentation involved, it provides insights into what has made an evaluation thrive or meet its untimely
+			end. At a glance, the light color coding of the circles indicates waiting, approval, and rejection states.
+
+			<div class="imagepad">
+				<img class="materialboxed responsive-img" src="img/tw/detail 1.jpg">
+				<img class="materialboxed responsive-img" src="img/tw/detail 2.jpg">
+
+			</div>
+
+			<b>Actions</b>
+			<br> Depending on your role, different prompts will appear on details page with certain action items. In the
+			first
+			instance below, the Approver user is prompted to either approve or reject the evaluation request. Going
+			through
+			this and other flows advances the evaluation - and all the documentation is centralized on this page for
+			ease of reference.
+
+			<div class="imagepad">
+				<img class="materialboxed responsive-img" src="img/tw/4.png">
+				<img class="materialboxed responsive-img" src="img/tw/5.png">
+			</div>
+			<b>Discovery</b>
+			<br> To make content accessible, users can access the search feature to find existing evaluations. It's also
+			a useful check to make sure duplicate evaluations are not made.
+			<div class="imagepad">
+				<img class="materialboxed responsive-img" src="img/tw/search.png">
+			</div>
+
+			For promoting discoverability, we had another modular dashboard popup to show a trending featured
+			technology, bringing awareness to emerging intiatives.
+			<div class="imagepad">
+				<img class="materialboxed responsive-img" src="img/tw/featured.png">
+			</div>
+
+		</div>
+		<div class="row">
+
+			<h4>Takeaways</h4>
+			<p>The Venture team fully onboarded their portfolio onto our platform and used it to track technologies
+				daily. A
+				few months in, we had around 40-50 active evaluations and the team was happy with the centralized tool.
+				Outside of the Venture team, other users expressed curiosity and interest in the company's investment
+				and
+				integration strategies.
+
+			</p>
+			Considering the very short timeline, I was proud of what our team was able to accomplish.
+			Functionality was definitely prioritized in this MVP - given more resources I would have liked to do more
+			user
+			testing and iterations based on continuous feedback.
+
+			Ideas for further improvements included having more ways to filter the
+			evaluations as well as a clearer timeline with animations similar to what you might see in a live deployment
+			/
+			pipeline tool.
+
+
 		</div>
 
-		<b>Evaluation Details</b>
-		<br> After creating a new evaluation or clicking on one from the Dashboard's table, you can view all its
-		attributes and a timeline of its creation. The top half gives a rundown of the attributes and also shows
-		who's accountable for the technology. This provides the transparency and ownership required for the process
-		to move forward.
-		On the bottom, the Event Log tells a story of who's reviewed it in the past, what issues they had with it,
-		and what its current status is. By surfacing the key people involved in these decisions as well as the
-		documentation involved, it provides insights into what has made an evaluation thrive or meet its untimely
-		end. At a glance, the light color coding of the circles indicates waiting, approval, and rejection states.
 
-		<div class="imagepad">
-			<img class="materialboxed responsive-img" src="img/tw/detail 1.jpg">
-			<img class="materialboxed responsive-img" src="img/tw/detail 2.jpg">
 
+		<div class="space">
 		</div>
-
-		<b>Actions</b>
-		<br> Depending on your role, different prompts will appear on details page with certain action items. In the
-		first
-		instance below, the Approver user is prompted to either approve or reject the evaluation request. Going
-		through
-		this and other flows advances the evaluation - and all the documentation is centralized on this page for
-		ease of reference.
-
-		<div class="imagepad">
-			<img class="materialboxed responsive-img" src="img/tw/4.png">
-			<img class="materialboxed responsive-img" src="img/tw/5.png">
-		</div>
-		<b>Discovery</b>
-		<br> To make content accessible, users can access the search feature to find existing evaluations. It's also
-		a useful check to make sure duplicate evaluations are not made.
-		<div class="imagepad">
-			<img class="materialboxed responsive-img" src="img/tw/search.png">
-		</div>
-
-		For promoting discoverability, we had another modular dashboard popup to show a trending featured
-		technology, bringing awareness to emerging intiatives.
-		<div class="imagepad">
-			<img class="materialboxed responsive-img" src="img/tw/featured.png">
-		</div>
-
 	</div>
-	<div class="row">
-
-		<h4>Takeaways</h4>
-		<p>The Venture team fully onboarded their portfolio onto our platform and used it to track technologies daily. A
-			few months in, we had around 40-50 active evaluations and the team was happy with the centralized tool.
-			Outside of the Venture team, other users expressed curiosity and interest in the company's investment and
-			integration strategies.
-
-		</p>
-		Considering the very short timeline, I was proud of what our team was able to accomplish.
-		Functionality was definitely prioritized in this MVP - given more resources I would have liked to do more user
-		testing and iterations based on continuous feedback.
-
-		Ideas for further improvements included having more ways to filter the
-		evaluations as well as a clearer timeline with animations similar to what you might see in a live deployment /
-		pipeline tool.
-
-
-	</div>
-
-
-
-	<div class="space">
-	</div>
-</div>
