@@ -268,7 +268,7 @@ embed {
 	height: 100%;
 }
 
-.muni ul li {
+ul li {
 	margin-top: 10px;
 	list-style-type: square;
 }
